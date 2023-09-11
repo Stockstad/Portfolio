@@ -1,0 +1,31 @@
+from flask import Flask, render_template, request, redirect, url_for, flash
+
+app = Flask(__name__)
+
+
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        return redirect(url_for('projects'))
+    
+    return render_template('index.html')
+
+@app.route('/techniques')
+def techniques():
+    return render_template('techniques.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/projects')
+
+def projects():
+    p = {"Name": "TS-Project", "Course": "TDP007", "Tech": "C#, ASP.NET", "Link": "https//:rickroll.com"}
+    return render_template('projects.html', p=p['Name'])
+
+
+
+
+app.run(debug=True)

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Projects</title>
+</head>
+<body>
+    <nav class="flex-nav">
+        <a href="{{ url_for('index') }}"><p class="nav-text">Home</p></a>
+        <a href="{{ url_for('projects') }}"><p class="nav-text nav-active">Projects</p></a>
+        <a href="{{ url_for('techniques')}}"><p class="nav-text">Techniques</p></a>
+        <a href="{{ url_for('contact') }}"><p class="nav-text">Contact</p></a>
+    </nav>
+
+    <section class="search-bar">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-btn"> 🔎 </button>
+        </div>
+    </section>
+    <section class="selection-bar">
+        <select class="selection-item">
+            <option value="default">Order by</input>
+            <option value="date">Date</input>
+            <option value="name">Name</input>
+        </select>
+        <select class="selection-item">
+            <option value="acending">Acending</input>
+            <option value="decending">Decending</input>
+        </select>
+    </section>
+    <section class="selection-bar">
+            <input type="checkbox" value="HTML">HTML</input>
+            <input type="checkbox" value="CSS">CSS</input>
+            <input type="checkbox" value="JS">JavaScript</input>
+            <input type="checkbox" value="TS">TypeScript</input>
+            <input type="checkbox" value="py">Python</input>
+            <input type="checkbox" value="C">C</input>
+            <input type="checkbox" value="C++">C++</input>
+            <input type="checkbox" value="C#">C#</input>
+            <input type="checkbox" value="Ruby">Ruby</input>
+            <input type="checkbox" value="SQL">SQL</input>
+            <input type="checkbox" value="NoSQL">NoSQL</input>
+    </section>
+        <section class="info">
+            <div>
+                <img src="../static/csharp.png" alt="C# Logo">
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Name: C# Project</li>
+                    <li><h4>Course: TDP003</h4></li>
+                    <li><h4>Techniques: C#, JSON, SQL</h4></li>
+                    <li><h4>Link: <a href="">ex</a></h4></li>
+                </ul>
+            </div>  
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Suspendisse ultrices sit amet enim sit amet maximus.
+                    Suspendisse nisi sem, suscipit nec tincidunt et, posuere quis nisl. Cras malesuada ex vel aliquam aliquet. Donec blandit metus non nulla
+                    viverra dignissim. Duis eleifend nec nulla vitae fermentum. Pellentesque imperdiet vitae
+                    magna quis tincidunt. In in ipsum finibus, congue justo ac, consequat sem. In aliquam lobortis elit nec porta. 
+                </p>
+            </div>
+        </section>
+
+        <section class="info">
+            <div>
+                <img src="../static/ts.png" alt="TS Logo">
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Name: {{ p }}</li>
+                    <li><h4>Course: TDP002</h4></li>
+                    <li><h4>Techniques: TypeScript, JSON, NoSQL, CSS, HTML, AngularJS</h4></li>
+                    <li><h4>Link: <a href="">ex</a></h4></li>
+                </ul>
+            </div>  
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Suspendisse ultrices sit amet enim sit amet maximus.
+                    Suspendisse nisi sem, suscipit nec tincidunt et, posuere quis nisl. Cras malesuada ex vel aliquam aliquet. Donec blandit metus non nulla
+                    viverra dignissim. Duis eleifend nec nulla vitae fermentum. Pellentesque imperdiet vitae
+                    magna quis tincidunt. In in ipsum finibus, congue justo ac, consequat sem. In aliquam lobortis elit nec porta. 
+                </p>
+            </div>
+        </section>
+        
+        
+    
+    <footer>
+        <p class="footer-text">Copyright 2023</p>
+    </footer>
+</body>
+    

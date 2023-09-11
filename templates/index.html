@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <title>Home</title>
+</head>
+<body onload="begin()">
+    <nav class="flex-nav">
+        <a href="{{ url_for('index') }}"><p class="nav-text nav-active">Home</p></a>
+        <a href="{{ url_for('projects') }}"><p class="nav-text">Projects</p></a>
+        <a href="{{ url_for('techniques')}}"><p class="nav-text">Techniques</p></a>
+        <a href="{{ url_for('contact') }}"><p class="nav-text">Contact</p></a>
+    </nav>
+    <section class="intro">
+        <img src="../static/person.png" alt="person">
+        <h1></1><div id="mess"></div></h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+        </p>
+    </section>
+    <section class="socials">
+        <img src="../static/gitlab.webp" alt="Gitlab Logo" class="social-pic">
+        <img src="../static/Github.webp" alt="Github Logo" class="social-pic">
+        <img src="../static/x.webp" alt="X Logo" class="social-pic">
+    </section>
+    
+    <footer>
+        <p class="footer-text">Copyright 2023</p>
+    </footer>
+</body>
+    
