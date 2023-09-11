@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Merriweather Sans', sans-serif;
+    color:#8895B3;
 }
 
 body {
@@ -38,6 +39,10 @@ a {
     
 }
 
+.nav-text:hover {
+    color: #DAB6FC;
+}
+
 .footer-text {
     color: white;
     font-size: 1rem;
@@ -69,6 +74,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 1rem;
 }
 
 #search-btn {
@@ -80,11 +86,6 @@ footer {
     border-color: #8895B3;
     background-color: #8E94F2;
     color: white;
-}
-
-.search-flex-item {
-    margin-top: 1rem;
-
 }
 
 #search-input {
@@ -108,4 +109,60 @@ footer {
     background-color:white;
     border-radius: 1rem;
 
+}
+
+input {
+    margin-left: 0.7rem;
+}
+
+p {
+    color:#8895B3
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+
+}
+
+
+img {
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+}
+
+.social-pic {
+    width: 2%;
+    height: 2%;
+    object-fit: cover;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.socials {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
 }
