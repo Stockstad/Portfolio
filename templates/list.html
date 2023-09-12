@@ -9,7 +9,7 @@
 <body>
     <nav class="flex-nav">
         <a href="{{ url_for('index') }}"><p class="nav-text">Home</p></a>
-        <a href="{{ url_for('projects') }}"><p class="nav-text nav-active">Projects</p></a>
+        <a href="{{ url_for('list') }}"><p class="nav-text nav-active">Projects</p></a>
         <a href="{{ url_for('techniques')}}"><p class="nav-text">Techniques</p></a>
         <a href="{{ url_for('contact') }}"><p class="nav-text">Contact</p></a>
     </nav>
@@ -27,6 +27,7 @@
             <option value="name">Name</input>
         </select>
         <select class="selection-item">
+
             <option value="acending">Acending</input>
             <option value="decending">Decending</input>
         </select>
@@ -50,21 +51,12 @@
             </div>
             <div>
                 <ul>
-                    <li><h4>Name: C# Project</li>
+                    <a href="{{ url_for('project') }}"><li><h4><u>C# Project</u></h4></li></a>
                     <li><h4>Course: TDP003</h4></li>
                     <li><h4>Techniques: C#, JSON, SQL</h4></li>
                     <li><h4>Link: <a href="">ex</a></h4></li>
                 </ul>
             </div>  
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Suspendisse ultrices sit amet enim sit amet maximus.
-                    Suspendisse nisi sem, suscipit nec tincidunt et, posuere quis nisl. Cras malesuada ex vel aliquam aliquet. Donec blandit metus non nulla
-                    viverra dignissim. Duis eleifend nec nulla vitae fermentum. Pellentesque imperdiet vitae
-                    magna quis tincidunt. In in ipsum finibus, congue justo ac, consequat sem. In aliquam lobortis elit nec porta. 
-                </p>
-            </div>
         </section>
 
         <section class="info">
@@ -73,27 +65,15 @@
             </div>
             <div>
                 <ul>
-                    <li><h4>Name: {{ p }}</li>
+                    <li><h4>{{ p }}</li>
                     <li><h4>Course: TDP002</h4></li>
                     <li><h4>Techniques: TypeScript, JSON, NoSQL, CSS, HTML, AngularJS</h4></li>
                     <li><h4>Link: <a href="">ex</a></h4></li>
                 </ul>
             </div>  
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Suspendisse ultrices sit amet enim sit amet maximus.
-                    Suspendisse nisi sem, suscipit nec tincidunt et, posuere quis nisl. Cras malesuada ex vel aliquam aliquet. Donec blandit metus non nulla
-                    viverra dignissim. Duis eleifend nec nulla vitae fermentum. Pellentesque imperdiet vitae
-                    magna quis tincidunt. In in ipsum finibus, congue justo ac, consequat sem. In aliquam lobortis elit nec porta. 
-                </p>
-            </div>
         </section>
-        
-        
-    
     <footer>
-        <p class="footer-text">Copyright 2023</p>
+        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
     </footer>
 </body>
     

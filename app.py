@@ -1,14 +1,10 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, session
 
 app = Flask(__name__)
 
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    if request.method == 'POST':
-        return redirect(url_for('projects'))
-    
     return render_template('index.html')
 
 @app.route('/techniques')
@@ -19,12 +15,14 @@ def techniques():
 def contact():
     return render_template('contact.html')
 
-@app.route('/projects')
-
-def projects():
+@app.route('/list')
+def list():
     p = {"Name": "TS-Project", "Course": "TDP007", "Tech": "C#, ASP.NET", "Link": "https//:rickroll.com"}
-    return render_template('projects.html', p=p['Name'])
+    return render_template('list.html', p=p['Name'])
 
+@app.route('/project')
+def project():
+    return render_template('project.html')
 
 
 

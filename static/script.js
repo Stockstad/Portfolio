@@ -2,7 +2,10 @@ let letter = 0;
 var interval;
 
 function begin(){
+   
     interval = setInterval(welcome_message, 15);
+    
+    
 }
 
 

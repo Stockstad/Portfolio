@@ -8,9 +8,10 @@
     <title>Home</title>
 </head>
 <body onload="begin()">
+
     <nav class="flex-nav">
         <a href="{{ url_for('index') }}"><p class="nav-text nav-active">Home</p></a>
-        <a href="{{ url_for('projects') }}"><p class="nav-text">Projects</p></a>
+        <a href="{{ url_for('list') }}"><p class="nav-text">Projects</p></a>
         <a href="{{ url_for('techniques')}}"><p class="nav-text">Techniques</p></a>
         <a href="{{ url_for('contact') }}"><p class="nav-text">Contact</p></a>
     </nav>
@@ -31,7 +32,7 @@
     </section>
     
     <footer>
-        <p class="footer-text">Copyright 2023</p>
+        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
     </footer>
 </body>
     
