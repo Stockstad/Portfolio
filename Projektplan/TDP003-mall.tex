@@ -1,4 +1,7 @@
 \documentclass{TDP003mall}
+\usepackage{float}
+\floatplacement{table}{htbp}
+
 
 
 
@@ -65,6 +68,9 @@ planerningen, men med att olika moment kan ha uppskattats fel planeras dessa om.
 
 \section{Planering}
 Planeringens huvudstyfte är att projektet ska hållas i rätt tidsfas och att projektmedlemmarna alltså har en överblick över när och vad som ska vara klart.
+För varje vecka markeras planerad tid, och i efterhand, åtgången tid. Dessutom markeras prioritet. Ju närmre en deadline desto högre blir prioriteten.
+Delar som inte är ett krav i projektet kommer att behandlas med lägre priortet. I det fall en korrigering måste göras markeras denna prirotet med ett ? före. Detta för
+att förtydliga att momentet kanske inte kommer behöva göras.
 \subsection{Givna deadlines}
 Måndag 04-09: Gruppkontraktet\\
 Tisdag 12-09: Tidsplanen\\
@@ -81,7 +87,48 @@ Onsdag 27-09: Mainprogram till API klar.\\
 Onsdag 04-10: Möjlighet att söka på hemsidan och få upp projekt.\\
 Fredag 06-10: Adminpanel klar. (Låg prio)\\
 
+\subsection{Veckouppdelning}
+\textbf{(11/9 - 17/9) V.37}\\\\
+Denna vecka: Lofi-prototypen\\
+Övrigt: Studera Flask, Jinja2\\
 
+\textbf{Deadlines denna vecka: }\\\\
+Fredag: Lofi-prototyp
+
+\begin{table}[]
+  \begin{tabular}{|l|l|l|l|l|}
+  \hline
+   Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+   1         & Skapande av prototypen     & 12h          & 8h           \\ \hline
+   1         & Beskrivning av prototypen  & 1h           & 30min        \\ \hline
+   2         & Hämta info om Flask/Jinja2 & 2h           & 2h           \\ \hline
+  \end{tabular}
+  \end{table}
+
+
+  \hrulefill
+
+\textbf{(18/9 - 24/9) V.38}\\\\
+  Denna vecka: Utkast av projektplanen, Installationsmanualen\\
+  Övrigt: Datalagrets API\\
+  Evenutellt: Korrigering av LoFi-prototypen\\
+
+  \textbf{Deadlines denna vecka: }\\\\
+  Torsdag: Projektplan Utkast, Installationsmanual v1
+
+
+\begin{table}[]
+  \begin{tabular}{|l|l|l|l|l|}
+  \hline
+   Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+   1         & Utkast av projektplanen  & 6h          & -          \\ \hline
+   1         & Installastionsmanualen  & 4h           & -       \\ \hline
+   ?1        & Korrigering LoFi-prototyp &2h          & -       \\ \hline
+   2         & Första 3 funktioner i API & 12h           & -           \\ \hline
+  \end{tabular}
+  \end{table}
+
+  \hrulefill
 
 
 \end{document}
