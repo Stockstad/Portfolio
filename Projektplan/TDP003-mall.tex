@@ -1,0 +1,87 @@
+\documentclass{TDP003mall}
+
+
+
+\newcommand{\version}{Version 1.1}
+\author{Johan Törner, \url{johto839@student.liu.se}\\
+  Linus Nordin, \url{linno988@student.liu.se}}
+\title{Projektplan}
+\date{2023-09-18}
+\rhead{Johan Törner\\
+Linus Nordin\\}
+
+
+
+\begin{document}
+\projectpage
+\section{Revisionshistorik}
+\begin{table}[!h]
+\begin{tabularx}{\linewidth}{|l|X|l|}
+\hline
+Ver. & Revisionsbeskrivning & Datum \\\hline
+1.0 & Skapad & 23-09-18\\\hline
+\end{tabularx}
+\end{table}
+
+
+\section{Inledning}
+Projektets syfte är att skapa en portfolio som innehåller de projekt som skapas under IP-programmet. 
+Portfolion är en webbsida vairfrån en användare kan söka på projekt som ligger i en databas. Ansvariga för projektet 
+är Johan Törner och Linus Nordin. Projektet kommer att följa de riktlinjer som satts och kommer att innehålla de delar
+som specificerats. 
+
+
+\section{Arbetssätt}
+
+\subsection{Tekniker}
+De tekniker som kommer att användas i projektets gång är följande: Python, HTML, CSS, TailwindCSS, Flask, Jinja2, JSON, Git samt Latex. 
+
+\subsubsection{Backend}
+På backend används Python, Flask, JSON samt Jinja2. Flask är ett lightweight-framework för webben baserat på Python.
+Tillsammans med Jinja2 kan vi rendera HTML direkt från servern. Dessutom använder vi JSON för att spara informaton om varje projekt vairfrån
+användaren sedan kan hämta dem.
+
+\subsubsection{Frontend}
+För frontend används HTML och CSS, med vilket Tailwind används som CSS+framework.
+Där som tidigare nämnt HTML renderas från servern av Jinja2 med hjälp av Flask. CSS används för att styla HTML. 
+
+
+\subsubsection{Övrigt}
+Git används för versionhantering. Latex används för dokumentskrivning. 
+
+\subsection{Kommunikation}
+Kommunikation sker huvudsakligen via Discord, om en inte är närvarande på campus förstås. När man träffas på morgonen upptas dagens 
+planering och bestämmer man som gör vad. Ytterligare information om detta finns under \textbf{\textit{uppdelning av arbetsuppgifter}}.
+
+\subsection{Upplägg}
+Huvudsakligen utförs arbetet på plats på campus, med undantag för tillfällen då jobb måste utföras under helgen (till följd av felaktigheter i planering)
+alternativt när någon är sjuk. För mer information om arbetssättet, se \textbf{\textit{gruppkontraktet}}. För mer specifik information angående tidsplaneringen, 
+se \textbf{\textit{planeringen}}. 
+
+\subsection{Uppdelning av arbetsuppgifter}
+Huvudsakligen delas arbetet upp. Eftersom arbetet sker på plats går det enkelt att gå igenom andras kod, alternativ svara på frågor. 
+Vid behov, men huvudsakligen vid starten på dagen, planeras vad som ska göras samt vem som ska göra vad för dagen. Huvudsakligen utgår man från
+planerningen, men med att olika moment kan ha uppskattats fel planeras dessa om. 
+
+\section{Planering}
+Planeringens huvudstyfte är att projektet ska hållas i rätt tidsfas och att projektmedlemmarna alltså har en överblick över när och vad som ska vara klart.
+\subsection{Givna deadlines}
+Måndag 04-09: Gruppkontraktet\\
+Tisdag 12-09: Tidsplanen\\
+Fredag 15-09: LoFi-prototypen\\
+Torsdag 21-09: Installationsmanualen v1, Projektplan utkast\\
+Torsdag 28-09: Installationsmanualen, Projektplan (brister återgärdade)\\
+Fredag 29-09: Datalagret\\
+Torsdag 12-10: Publicering av Portfolio, Systemdokumentation v1\\
+Torsdag 19-10: Reflektionsdokument, Systemdokumentation (brister återgärdade)\\
+
+\subsection{Milstolpar}
+Måndag: 25-09: Datalagrets API-funktioner klara.\\
+Onsdag 27-09: Mainprogram till API klar.\\
+Onsdag 04-10: Möjlighet att söka på hemsidan och få upp projekt.\\
+Fredag 06-10: Adminpanel klar. (Låg prio)\\
+
+
+
+
+\end{document}
