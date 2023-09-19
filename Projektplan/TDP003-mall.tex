@@ -79,12 +79,12 @@ Torsdag 21-09: Installationsmanualen v1, Projektplan utkast\\
 Torsdag 28-09: Installationsmanualen, Projektplan (brister återgärdade)\\
 Fredag 29-09: Datalagret\\
 Torsdag 12-10: Publicering av Portfolio, Systemdokumentation v1\\
-Torsdag 19-10: Reflektionsdokument, Systemdokumentation (brister återgärdade)\\
+Torsdag 19-10: Systemdokumentation (brister återgärdade)\\
 
 \subsection{Milstolpar}
 Måndag: 25-09: Datalagrets API-funktioner klara.\\
 Onsdag 27-09: Mainprogram till API klar.\\
-Onsdag 04-10: Möjlighet att söka på hemsidan och få upp projekt.\\
+Onsdag 02-10: Möjlighet att söka på hemsidan och få upp projekt.\\
 Fredag 06-10: Adminpanel klar. (Låg prio)\\
 
 \subsection{Veckouppdelning}
@@ -107,10 +107,11 @@ Fredag: Lofi-prototyp
 
 
   \hrulefill
+  \vspace{6em}
 
 \textbf{(18/9 - 24/9) V.38}\\\\
   Denna vecka: Utkast av projektplanen, Installationsmanualen\\
-  Övrigt: Datalagrets API\\
+  Övrigt: Datalagret\\
   Evenutellt: Korrigering av LoFi-prototypen\\
 
   \textbf{Deadlines denna vecka: }\\\\
@@ -123,12 +124,150 @@ Fredag: Lofi-prototyp
    Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
    1         & Utkast av projektplanen  & 6h          & -          \\ \hline
    1         & Installastionsmanualen  & 4h           & -       \\ \hline
-   ?1        & Korrigering LoFi-prototyp &2h          & -       \\ \hline
-   2         & Första 3 funktioner i API & 12h           & -           \\ \hline
+   1?        & Korrigering LoFi-prototyp &2h          & -       \\ \hline
+   2         & Första 3 funktioner i Datalageret & 12h           & -           \\ \hline
   \end{tabular}
   \end{table}
 
   \hrulefill
+
+  \textbf{(25/9 - 01/10) V.39}\\\\
+  Denna vecka: Datalagret, Presentationslagret\\
+  Övrigt: Studera TailwindCSS\\
+  Evenutellt: Korrigering av Projektplan, Installationsmanualen\\
+
+  \textbf{Deadlines denna vecka: }\\\\
+  Torsdag: Brister i projektplan och installationsmanual återgärdade.\\
+  Fredag: Datalagret
+
+
+\begin{table}[]
+  \begin{tabular}{|l|l|l|l|l|}
+  \hline
+   Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+   1         & Resterande funktioner i Datalagret & 12h          & -          \\ \hline
+   2        & Presentationslager: Indexsida  & 1h           & -       \\ \hline
+   2        & Presentationslager: Listsida &6h          & -       \\ \hline
+   2         & Presentationslager: Tekniksida & 4h          & -           \\ \hline
+   2         & Presentationslager: Projektsida & 4h         & - \\ \hline
+   1?    & Korrigeringar & 2h         & - \\ \hline
+  \end{tabular}
+  \end{table}
+
+  \hrulefill
+
+  
+\textbf{(02/10 - 08/10) V.40}\\\\
+Denna vecka: Återgärda fel, Adminpanel\\
+
+\textbf{Deadlines denna vecka: }\\\\
+Inga givna deadlines
+
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+ 1?        & Återgärda fel  & 12h          & -          \\ \hline
+ 2         & Adminpanel & 12h           & -       \\ \hline
+\end{tabular}
+\end{table}
+
+\vspace{3em}
+
+\textbf{(09/10 - 15/10) V.41}\\\\
+Denna vecka: Systemdokumentation, Publicering av portfolio\\
+
+\textbf{Deadlines denna vecka: }\\\\
+Torsdag: Publicering av portfolio, Systemdokumentation
+
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+ 1         & Systemdokumentationen  & 6h          & -          \\ \hline
+ 1         & Studera publiceringssystem & 2h           & -       \\ \hline
+ 1?        & Återgärda fel              & 4h            & -       \\ \hline
+\end{tabular}
+\end{table}
+
+\hrulefill
+
+\textbf{(16/10 - 22/10) V.42}\\\\
+Denna vecka: Brister Systemdokumentation\\
+
+\textbf{Deadlines denna vecka: }\\\\
+Torsdag: Brister i systemdokumentationen återgärdade
+
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+ 1?         & Återgärda fel & 6h          & -          \\ \hline
+
+\end{tabular}
+\end{table}
+
+\hrulefill
+
+\section{Innehåll}
+Enligt de specifikationer som givits kommer sidan att ha en Homepage, en List-sida, 
+en Project-sida samt en Teqchniques-sida. Till detta, om tid finns, tillför vi en
+adminpanel varifrån portfolions ägare kan lägga till projekt utan att behöva gå in i
+databasen. Nedan följer beskrivingar för de olika delarnas funktionalitet. I övrigt kan
+se mer detaljerad information om frontend i \textbf{\textit{lofi-prototypen}}.
+
+\subsection{Presentationslagret} 
+
+\subsubsection{Home}
+Home är sidans indexsida. Här kommer finnas en del om användaren samt en eller flera bilder.
+I övrig kommer sidan att verka som den huvudsakliga sidan för navigation. Sidan är 
+statisk och kommer inte att visa någon information från databasen.
+
+\subsubsection{List}
+List-sidan innehåller ett sökfält varifrån användaren kan söka på projekt, samt filtrera
+och ordna efter bland annat tekniker och datum. Till varje projekt som sedan 
+visas kommer en bild att tillhöra, lite information, samt en länk till projektets git-sida.
+Sidan är dynamisk.
+
+\subsubsection{Teqchniques}
+Tekniksidan listar de tekniker som används i projekt på sidan. Användaren ska kunna
+klicka på en vald teknik och sedan ska de projekt som innehåller denna teknik listas
+på list-sidan. Sidan är dynamisk.
+
+\subsubsection{Project}
+Project-sidan visar ett valt projekt och mer utförlig information om användaren
+klickar på det från list-sidan. Sidan är dynamisk.
+
+\subsubsection{Adminpanel}
+Skulle tid finnas kommer en adminpanel att implementeras. Denna ska en given användare,
+med största sannolikhet portfolions användare, kunna logga in till. Härifrån kommer
+användaren att kunna ladda upp nya projekt och hantera gamla projekt. På detta
+sätt behöver portfolions användare inte skriva JSON-filer direkt. 
+
+\subsection{Datalagret}
+Datalagrets uppgift är att hantera information om projekten. I detta fall ska
+namn, id, start och slutdatum, kurskod, kursnamn, kurspoäng, använda tekniker,
+en kort beskrivning, en lång beskrivning, en liten och stor bild, en gruppstorlek
+samt en länk till en projektsida.\\\\
+Datan lagras i JSON och hanteras med Flask och skrivs ut i HTML med hjälp av Jinja2.\\\\
+Ett krav är att data ska kunna redigeras direkt i JSON-filer utan att servern startas om.
+Detta är dock en självklarhet i det fall att en adminpanel implementeras.
+
+\subsection{Risker och Riskhantering}
+I och med projektets gång kan risker uppstå. Den mest framträdande av dessa risker
+är sjukdom. Hantering av sjukdom är i dess enklaste form att den som drabbats arbetar hemmifrån.
+I denna projektgrupp har alla den möjligheten. I de fall att sjukdomen är så pass
+
+
+
+
+
+
+
+
 
 
 \end{document}

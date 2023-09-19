@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.1)  18 SEP 2023 13:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.1)  19 SEP 2023 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,27 +769,113 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 98.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 120.
+               Default added (so using `htbp') on input line 121.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 144.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 167.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 185.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 204.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 251--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--258
+
+ []
 
 
 AED: lastpage setting LastPage
-[3] (./TDP003-mall.aux)
+[5] (./TDP003-mall.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
@@ -797,16 +883,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `TDP003-mall.out' has not changed.
-(rerunfilecheck)             Checksum: E192C1DE86AE01CBBE09B8221B1C2B8A;1610.
+
+Package rerunfilecheck Warning: File `TDP003-mall.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `TDP003-mall.out':
+(rerunfilecheck)             Before: 4C74FF6372C9E17C068B1AD4AC648B06;2370
+(rerunfilecheck)             After:  E229614584EF37C19730F0FE4552F44D;2478.
  ) 
 Here is how much of TeX's memory you used:
- 23247 strings out of 477628
- 480398 string characters out of 5840664
- 830723 words of memory out of 5000000
- 43514 multiletter control sequences out of 15000+600000
+ 23249 strings out of 477628
+ 480425 string characters out of 5840664
+ 831555 words of memory out of 5000000
+ 43516 multiletter control sequences out of 15000+600000
  471250 words of font info for 43 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 115i,12n,118p,554b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,11n,118p,554b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TDP003-mall.pdf (4 pages).
+Output written on TDP003-mall.pdf (6 pages).
