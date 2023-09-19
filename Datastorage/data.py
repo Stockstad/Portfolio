@@ -24,24 +24,30 @@ def get_project(db, id):
             return i
     return None
 
-def search(db, search, techniques, search_fields):
+def search(db, sort_by, sort_order, search, techniques, search_fields):
     search_db = db.copy()
     for i in search_db:
       i["project_id"] = str(i["project_id"]) #Is this okay?
 
     response = []
     for project in search_db:
-        if len(search_fields) == 0:
-            return []
-        elif search_fields == None:
+        if search_fields == None:
             for key in project:
                 if project[key] == search and techniques_allowed(project, techniques):
                         response.append(project)
+        elif len(search_fields) == 0:
+            return []
+        
         else:
             for field in search_fields:
                 if project[field] == search and techniques_allowed(project, techniques):
                         response.append(project)
-    return response
+    sorted_list = sorted(response, key=lambda x: x[sort_by])
+    if sort_order == "desc":
+        print("Debug")
+        return sorted_list.reverse()
+    else:
+        return sorted_list
 
 
 def techniques_allowed(pro, tech):
@@ -49,14 +55,16 @@ def techniques_allowed(pro, tech):
         return all(t in pro["techniques_used"] for t in tech)
     else:
         return True
+    
 
 
 
 
 
 
-db = load("Datastorage/data.json")
+
+db = load("data.json")
 
 
-item = search(db, "3", ["ruby"], ["project_id"])
+item = search(db, "project_id", "desc", "TDP003", [], ["course_id"])
 print(item)
