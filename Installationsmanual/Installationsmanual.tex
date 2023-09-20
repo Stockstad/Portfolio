@@ -1,0 +1,64 @@
+\documentclass{TDP003mall}
+
+
+
+\newcommand{\version}{Version 1.0}
+\author{Johan Törner, \url{daniel.o.persson@liu.se}\\
+  Linus Nordin, \url{emanuel.kinberger@liu.se}\\}
+\title{Installationsmanual}
+\date{2023-XX-XX}
+\rhead{Linus Nordin\\
+Johan Törner}
+
+
+
+\begin{document}
+\projectpage
+\section{Revisionshistorik}
+\begin{table}[!h]
+\begin{tabularx}{\linewidth}{|l|X|l|}
+\hline
+Ver. & Revisionsbeskrivning & Datum \\\hline
+1.0 & Första Versionen & 230921 \\\hline
+\end{tabularx}
+\end{table}
+
+
+\section{Inledning}
+För att kunna arbeta portfolio-sidan så krävs en del dependencies.
+Först behövs någon form av text-hanterare.
+
+\section{Python3}
+Det första som måste installeras är Python3.\\ 
+Kommandot för att installera Python3;\\\\
+\textbf{sudo apt-get install python3}\\\\
+Man bör kolla att python3 och pip är installerat med\\\\
+\textbf{python3 -m pip --version}
+
+\section{Emacs}
+Installationen av Emacs sker genom terminalen.\\
+I ett Debian-baserat system (Ubuntu, till exempel) så används\\\\
+\textbf{sudo apt-get install emacs}\\\\
+Bekräfta sedan att emacs är installerat med\\\\
+\textbf{emacs -version}\\\\
+Sedan kan man köra emacs genom terminalen eller så kan man öppna en GUI för emacs.
+
+
+\section{Visual Studio Code}
+Visual Studio Code installeras med kommandot\\\\
+\textbf{sudo apt-get install code}\\\\ 
+Sedan kör man VSC med\\\\
+\textbf{code}
+\subsection{Python för VSC}
+När VSC är installerad och öppnad så bör man installera Python extensionen
+På vänstra delen av VSC så finns det en rad med knappar, tryck på den för Extensions.
+Sök sedan efter "Python" och installera den som helt enkelt heter "Python" och kommer från Microsoft
+Då installeras även Pylance.
+
+
+\section{Flask}
+För att kunna arbeta med Python inom webbsidan så måste vi ha Flask. 
+Vi använder oss av Pip för att installera Flask.
+pip install Flask
+
+\end{document}
