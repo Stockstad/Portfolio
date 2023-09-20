@@ -28,12 +28,16 @@ Ver. & Revisionsbeskrivning & Datum \\\hline
 För att kunna arbeta portfolio-sidan så krävs en del dependencies.
 Först behövs någon form av text-hanterare.
 
+Alla kommandon körs genom Linux-terminalen, som öppnas med Ctrl-Alt-T.
+
 \section{Python3}
 Det första som måste installeras är Python3.\\ 
 Kommandot för att installera Python3;\\\\
 \textbf{sudo apt-get install python3}\\\\
 Man bör kolla att python3 och pip är installerat med\\\\
 \textbf{python3 -m pip --version}
+Om terminalen ger en error så kan pip installeras med följande kommando\\\\
+\textbf{sudo apt-get install pip}
 
 \section{Emacs}
 Installationen av Emacs sker genom terminalen.\\
@@ -60,5 +64,13 @@ Då installeras även Pylance.
 För att kunna arbeta med Python inom webbsidan så måste vi ha Flask. 
 Vi använder oss av Pip för att installera Flask.
 pip install Flask
+
+\section{Tailwind}
+\textbf{cd ~}\\\\
+\textbf{sudo apt-get install npm}\\\\
+\textbf{npm install tailwindcss@3.1.4}\\\\
+\textbf{npx tailwindcss init}\\\\
+
+
 
 \end{document}

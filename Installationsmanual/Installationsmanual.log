@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  20 SEP 2023 10:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  20 SEP 2023 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,9 +805,6 @@ LaTeX Font Warning: Size substitutions with differences
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Installationsmanual.out' has not changed.
 (rerunfilecheck)             Checksum: 707FEF330F52B6D75216F07D6D247E16;705.
