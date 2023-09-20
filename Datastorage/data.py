@@ -11,7 +11,6 @@ def load(filename):
             if "project_id" in i:
                 projects.append(i)
 
-
         sorted_projects = sorted(projects, key=lambda x: x["project_id"])
         file.close()
         return sorted_projects
@@ -19,11 +18,10 @@ def load(filename):
         return None
 
 def get_project_count(db):
-    return len(db)
-    
+    return len(db)                                        
 def get_project(db, id):
     for i in db:
-        if i["project_id"] == id: #What if multiple projects happen to have the same id?
+        if i["project_id"] == id: 
             return i
     return None
 
@@ -38,16 +36,18 @@ def search(db, sort_by="start_date", sort_order="desc", techniques=[], search=No
                     response.append(project)
             else:
                 for key in project:
-                    if project[key] == search and techniques_allowed(project, techniques):
-                        response.append(project)
+                    if type(project[key]) == str:
+                        if project[key].lower() == search.lower() and techniques_allowed(project, techniques):
+                            response.append(project)
         else:
             if search == None:
                 if techniques_allowed(project, techniques):
                     response.append(project)
             else:
                 for field in search_fields:
-                    if project[field] == search and techniques_allowed(project, techniques):
-                        response.append(project)
+                    if type(project[field]) == str:
+                        if project[field].lower() == search.lower() and techniques_allowed(project, techniques):
+                            response.append(project)
     sorted_list = sorted(response, key=lambda x: x[sort_by])
     if sort_order == "desc":
         return sorted_list[::-1]
@@ -81,7 +81,6 @@ def get_technique_stats(db):
                 t_list.append({"id": project["project_id"], "name": project["project_name"]})
         stats[tech] = t_list
     return stats
-
 
 
 

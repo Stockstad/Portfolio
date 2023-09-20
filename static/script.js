@@ -18,3 +18,14 @@ function welcome_message() {
         clearInterval(interval);
     }
 }
+
+// Get all buttons with the "toggle-button" class
+const buttons = document.querySelectorAll(".p-button");
+
+// Add a click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener("click", function() {
+    // Toggle the "active" class on each button individually
+    this.classList.toggle("active");
+  });
+});
