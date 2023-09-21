@@ -17,22 +17,22 @@
         <div class="search-bar">
             <form method="POST">
                 <input name="text" id="search-input" placeholder="Search">
-                <button id="search-btn"> 🔎 </button>
+                <button type="submit" id="search-btn"> 🔎 </button>
             </form>
         </div>
     </section>
     <section class="selection-bar">
-        <select class="selection-item">
-            <option value="default">Order by</input>
-            <option value="date">Date</input>
-            <option value="name">Name</input>
-        </select>
-        <form method="POST">
-            <select name="sortby" class="selection-item">
-                    <option value="acending">Acending</input>
-                    <option value="decending">Decending</input>
+        <form method="POST" action="/list">
+            <select class="selection-item">
+                <option value="default">Order by</option>
+                <option value="date">Date</option>
+                <option value="name">Name</option>
             </select>
-        </form>
+            <select name="sortby" class="selection-item">
+                <option value="asec">Ascending</option>
+                <option value="desc">Decending</option>
+            </select>
+        <form method="POST" action="/list">
     </section>
     <section class="selection-bar">
         {% for t in techniques %}

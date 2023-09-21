@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify, request
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_session import Session
 import data
 
@@ -38,13 +38,23 @@ def list_post():
     if text == "":
         text = None
 
-    orderbuttons = request.form.get['sortby']
+   
+    orderbuttons = request.form.get("sortby")
+    #reqorder = orderbuttons['sortby']
 
     #buttons = request.form['checkbox']
     projects = data.search(pl, sort_by="project_id", sort_order="asec", techniques=[], search=text, search_fields=None)
 
-    return "^_^"
+    return orderbuttons
     #return render_template('list.html',pl=projects, techniques=techniques)
+
+
+#@app.route('/formsub', methods=['POST'])
+#def formsub():
+#    orderbuttons = request.form.get('sortby')
+#    print(orderbuttons)
+#    return orderbuttons
+
 
 @app.route('/project')
 def project():
@@ -56,6 +66,7 @@ def process():
     # process the data using Python code
     db = data.load("test_data.json")
     session['dtek'] = data.search(db=db, techniques=res)
+
     return jsonify(res=res) # return the result to JavaScript
 
 
