@@ -27,6 +27,25 @@ def list():
     techniques = data.get_techniques(pl)
     return render_template('list.html', pl=pl, techniques=techniques)
 
+
+@app.route('/list', methods=['GET', 'POST'])
+def list_post():
+    pl = data.load("test_data.json")
+    techniques = data.get_techniques(pl)
+
+    text = request.form['text']
+    text = text.lower()
+    if text == "":
+        text = None
+
+    orderbuttons = request.form.get['sortby']
+
+    #buttons = request.form['checkbox']
+    projects = data.search(pl, sort_by="project_id", sort_order="asec", techniques=[], search=text, search_fields=None)
+
+    return "^_^"
+    #return render_template('list.html',pl=projects, techniques=techniques)
+
 @app.route('/project')
 def project():
     return render_template('project.html')
@@ -38,6 +57,7 @@ def process():
     db = data.load("test_data.json")
     session['dtek'] = data.search(db=db, techniques=res)
     return jsonify(res=res) # return the result to JavaScript
+
 
 
 app.run(debug=True)

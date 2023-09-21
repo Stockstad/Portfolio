@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  21 SEP 2023 10:21
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  21 SEP 2023 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,20 +724,6 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 15.
-
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \usepackage
-                {graphicx}
-? 
-[1
-
-]
 File: lith.png Graphic file (type bmp)
 <lith.png>
 File: ida.png Graphic file (type bmp)
@@ -758,100 +744,106 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 18.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 File: ./images//pip_version.png Graphic file (type bmp)
 <./images//pip_version.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
 
-Overfull \hbox (4.5157pt too wide) in paragraph at lines 36--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--49
+
+ []
+
+
+Overfull \hbox (4.5157pt too wide) in paragraph at lines 40--49
 [] 
  []
 
 File: ./images//emacs_version.png Graphic file (type bmp)
 <./images//emacs_version.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
 
-Overfull \hbox (4.5157pt too wide) in paragraph at lines 46--53
+Overfull \hbox (4.5157pt too wide) in paragraph at lines 51--58
 [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
-
- []
-
 [1]
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+
+ []
+
 File: ./images//extensions.png Graphic file (type bmp)
 <./images//extensions.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--66
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
 
  []
 
@@ -862,27 +854,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 F
+l.74 F
       ör att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+[2]
+File: ./images//flask_run.png Graphic file (type bmp)
+<./images//flask_run.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
 
 AED: lastpage setting LastPage
-[2] (./Installationsmanual.aux)
+[3] (./Installationsmanual.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
@@ -894,10 +894,10 @@ Package rerunfilecheck Info: File `Installationsmanual.out' has not changed.
 (rerunfilecheck)             Checksum: 2786C9A8069B9C419A1CF791A7E5E095;841.
  ) 
 Here is how much of TeX's memory you used:
- 23181 strings out of 478190
- 479793 string characters out of 5854828
+ 23199 strings out of 478190
+ 480196 string characters out of 5854828
  819794 words of memory out of 5000000
- 43413 multiletter control sequences out of 15000+600000
+ 43431 multiletter control sequences out of 15000+600000
  471242 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,11n,118p,544b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
