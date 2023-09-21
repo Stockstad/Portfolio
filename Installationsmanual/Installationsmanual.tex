@@ -13,6 +13,8 @@ Johan Törner}
 
 
 \begin{document}
+\graphicspath{ {./images/} }
+\usepackage{graphicx}
 \projectpage
 \section{Revisionshistorik}
 \begin{table}[!h]
@@ -35,9 +37,10 @@ Det första som måste installeras är Python3.\\
 Kommandot för att installera Python3;\\\\
 \textbf{sudo apt-get install python3}\\\\
 Man bör kolla att python3 och pip är installerat med\\\\
-\textbf{python3 -m pip --version}
+\textbf{python3 -m pip --version}\\\\
 Om terminalen ger en error så kan pip installeras med följande kommando\\\\
-\textbf{sudo apt-get install pip}
+\textbf{sudo apt-get install pip}\\\\
+\includegraphics[scale=0.5]{pip_version}
 
 \section{Emacs}
 Installationen av Emacs sker genom terminalen.\\
@@ -45,7 +48,8 @@ I ett Debian-baserat system (Ubuntu, till exempel) så används\\\\
 \textbf{sudo apt-get install emacs}\\\\
 Bekräfta sedan att emacs är installerat med\\\\
 \textbf{emacs -version}\\\\
-Sedan kan man köra emacs genom terminalen eller så kan man öppna en GUI för emacs.
+Sedan kan man köra emacs genom terminalen eller så kan man öppna en GUI för emacs.\\\\
+\includegraphics[scale=0.5]{emacs_version}
 
 
 \section{Visual Studio Code}
@@ -57,13 +61,17 @@ Sedan kör man VSC med\\\\
 När VSC är installerad och öppnad så bör man installera Python extensionen\\
 På vänstra delen av VSC så finns det en rad med knappar, tryck på den för Extensions.\\
 Sök sedan efter "Python" och installera den som helt enkelt heter "Python" och kommer från Microsoft\\
-Då installeras även Pylance.·\\
+Då installeras även Pylance.\\\\
+\includegraphics[scale=0.5]{extensions}
 
 
 \section{Flask}\\
 För att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
-Vi använder oss av Pip för att installera Flask.\\
+Vi använder oss av Pip för att installera Flask.\\\\
 \textbf{pip install Flask}\\
+\subsection{Att köra Flask}
+För att köra Flask så bör man stå i katalogen för projektets app.py och sedan köra kommandot\\\\
+\textbf{Flask run}
 
 
 
