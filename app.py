@@ -10,7 +10,9 @@ def index():
 
 @app.route('/techniques')
 def techniques():
-    return render_template('techniques.html')
+    pl = data.load("test_data.json")
+    techniques = data.get_techniques(pl)
+    return render_template('techniques.html', techniques=techniques)
 
 @app.route('/contact')
 def contact():
@@ -19,7 +21,8 @@ def contact():
 @app.route('/list')
 def list():
     pl = data.load("test_data.json")
-    return render_template('list.html', pl=pl)
+    techniques = data.get_techniques(pl)
+    return render_template('list.html', pl=pl, techniques=techniques)
 
 @app.route('/project')
 def project():

@@ -13,7 +13,7 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["Dart", "JavaScript", "CSS", "Flutter", "MongoDB"]
     },
     {
         "name": "Ruby-Project",
@@ -53,6 +53,6 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON","C++", "React", "Angular"]
     }
 ]

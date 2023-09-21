@@ -8,9 +8,9 @@
 </head>
 <body>
     <nav class="flex-nav">
-        <a href="index.html"><p class="nav-text">Home</p></a>
-        <a href="list.html" ><p class="nav-text nav-active">Projects</p></a>
-        <a href="techniques.html"><p class="nav-text">Techniques</p></a>
+        <a href="{{ url_for('index')}}"><p class="nav-text">Home</p></a>
+        <a href="{{ url_for('list')}}" ><p class="nav-text nav-active">Projects</p></a>
+        <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
     </nav>
 
     <section class="search-bar">
@@ -32,17 +32,9 @@
         </select>
     </section>
     <section class="selection-bar">
-            <input type="checkbox" value="HTML">HTML</input>
-            <input type="checkbox" value="CSS">CSS</input>
-            <input type="checkbox" value="JS">JavaScript</input>
-            <input type="checkbox" value="TS">TypeScript</input>
-            <input type="checkbox" value="py">Python</input>
-            <input type="checkbox" value="C">C</input>
-            <input type="checkbox" value="C++">C++</input>
-            <input type="checkbox" value="C#">C#</input>
-            <input type="checkbox" value="Ruby">Ruby</input>
-            <input type="checkbox" value="SQL">SQL</input>
-            <input type="checkbox" value="NoSQL">NoSQL</input>
+        {% for t in techniques %}
+            <input type="checkbox" value="{{t}}">{{t}}</input>
+        {% endfor %}
     </section>
         {% for p in pl %}
             <section class="info">
