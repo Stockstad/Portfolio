@@ -42,30 +42,23 @@ De tekniker som kommer att användas i projektets gång är följande: Python, H
 \subsubsection{Backend}
 På backend används Python, Flask, JSON samt Jinja2. Flask är ett lightweight-framework för webben baserat på Python.
 Tillsammans med Jinja2 kan vi rendera HTML direkt från servern. Dessutom använder vi JSON för att spara informaton om varje projekt vairfrån
-användaren sedan kan hämta dem.
+användaren sedan kan hämta dem. Dessutom består backend av en API skriven i Python.
+Denna API används sedan av Flask för att läsa in, men också skriva ut, till databasen där
+projekten sparas. 
 
 
 \subsubsection{Frontend}
-För frontend används HTML och CSS, med vilket Tailwind används som CSS-framework.
-Där som tidigare nämnt HTML renderas från servern av Jinja2 med hjälp av Flask. CSS används för att styla HTML. 
-
+För frontend används HTML och CSS samt JavaScript. JavaScript kommer användas sparsamt
+och mestadels för att manipulera CSS. Med hjälp av Jinja2 som kommer tillsammans med Flask kan
+HTML-filer renderas till användaren från servern samt att variabler kan passas igenom.
+På så sätt skapas dynamiska sidor där informationen kan uppdateras utan att behöva
+ladda om hela sidan.
 
 \subsubsection{Övrigt}
-Git används för versionhantering. Latex används för dokumentskrivning. 
+Git används för versionhantering. Latex används för dokumentskrivning. För mer information
+på hur Git används i projektet, se \textbf{\textit{Rutiner}}.
 
-\subsection{Kommunikation}
-Kommunikation sker huvudsakligen via Discord, om en inte är närvarande på campus förstås. När man träffas på morgonen nämns dagens 
-planering och man bestämmer vem som gör vad. Ytterligare information om detta finns under \textbf{\textit{uppdelning av arbetsuppgifter}}.
-
-\subsection{Upplägg}
-Huvudsakligen utförs arbetet på plats på campus, med undantag för tillfällen då jobb måste utföras under helgen (till följd av felaktigheter i planering)
-alternativt när någon är sjuk. För mer information om arbetssättet, se \textbf{\textit{gruppkontraktet}}. För mer specifik information angående tidsplaneringen, 
-se \textbf{\textit{planeringen}}. 
-
-\subsection{Uppdelning av arbetsuppgifter}
-Huvudsakligen delas arbetet upp. Eftersom arbetet sker på plats går det enkelt att gå igenom andras kod, alternativ svara på frågor. 
-Vid behov, men huvudsakligen vid starten på dagen, planeras vad som ska göras samt vem som ska göra vad för dagen. Huvudsakligen utgår man från
-planerningen, men med att olika moment kan ha uppskattats fel planeras dessa om. 
+\vspace{16em}
 
 \section{Planering}
 Planeringens huvudstyfte är att projektet ska hållas i rätt tidsfas och att projektmedlemmarna alltså har en överblick över när och vad som ska vara klart.
@@ -187,7 +180,7 @@ Denna vecka: Systemdokumentation, Publicering av portfolio\\
 Torsdag: Publicering av portfolio, Systemdokumentation
 
 
-\begin{table}[]
+\begin{table}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
  Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
@@ -273,9 +266,31 @@ I de fall ett hinder i planeringen uppstår tillkallas projektgruppen. I de fall
 sjukdom inträffat sker det, om möjigt, online. I andra fall tas det upp i början av dagen
 då gruppen träffas.
 
+\section{Rutiner}
+Gruppen hjälps åt att lösa problem, även om arbetet är uppdelat. Gruppen går igenom varandras kod dagligen och har en synpunkter
+uppmuntras man att lyfta dessa. Samtidigt, för att förhindra problem med versionshantering, ska medlemmarna pusha till remote efter dagens slut,
+förutsatt att arbete faktiskt har gjorts. Även dokument som detta pushas till remote. Det är också viktigt att medlemmerna meddelar varandra
+när de pushar samt vad de pushar. Extra viktigt är det för varje medlem att veta vad den andra håller på med. Man bör alltså inte basera allt
+det man jobbar med utifrån planeringen och det är därför gruppen pratar igenom dagen när de möts på morgonen. 
 
+\subsection{Möten}
+Eftersom att gruppen är liten och i stort sett alltid jobbar fysiskt nära varandra beslutades att tradionella möten inte kommer att hållas.
+Det går istället mycket bra att diskutera saker när man parprogrammerar eller generellt när man sitter bredvid varandra. Samtidigt har inte gruppen
+behövt skapa en kravspecifikation eftersom denna redan är given. 
 
+\subsection{Kommunikation}
+Kommunikation sker huvudsakligen via Discord, om en inte är närvarande på campus förstås. När man träffas på morgonen nämns dagens 
+planering och man bestämmer vem som gör vad. Ytterligare information om detta finns under \textbf{\textit{uppdelning av arbetsuppgifter}}.
 
+\subsection{Plats}
+Huvudsakligen utförs arbetet på plats på campus, med undantag för tillfällen då jobb måste utföras under helgen (till följd av felaktigheter i planering)
+alternativt när någon är sjuk. För mer information om arbetssättet, se \textbf{\textit{gruppkontraktet}}. För mer specifik information angående tidsplaneringen, 
+se \textbf{\textit{planeringen}}. 
+
+\subsection{Uppdelning av arbetsuppgifter}
+Huvudsakligen delas arbetet upp. Eftersom arbetet sker på plats går det enkelt att gå igenom andras kod, alternativ svara på frågor. 
+Vid behov, men huvudsakligen vid starten på dagen, planeras vad som ska göras samt vem som ska göra vad för dagen. Huvudsakligen utgår man från
+planerningen, men med att olika moment kan ha uppskattats fel planeras dessa om. 
 
 
 
