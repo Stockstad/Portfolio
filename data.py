@@ -84,8 +84,6 @@ def get_technique_stats(db): #Returns a list of project per technique used.
 
 
 
-    
-
 
 
 

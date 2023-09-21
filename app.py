@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
+import data
 
 app = Flask(__name__)
 
@@ -17,8 +18,8 @@ def contact():
 
 @app.route('/list')
 def list():
-    p = {"Name": "TS-Project", "Course": "TDP007", "Tech": "C#, ASP.NET", "Link": "https//:rickroll.com"}
-    return render_template('list.html', p=p['Name'])
+    pl = data.load("test_data.json")
+    return render_template('list.html', pl=pl)
 
 @app.route('/project')
 def project():

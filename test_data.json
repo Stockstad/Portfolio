@@ -1,0 +1,58 @@
+[
+    {
+        "name": "C#-Project",
+        "project_id": 1,
+        "course": "TDP003",
+        "small_img": "../static/csharp.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    },
+    {
+        "name": "Ruby-Project",
+        "project_id": 2,
+        "course": "TDP003",
+        "small_img": "../static/ruby.png",
+        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
+        "techniques_used": ["C#", "MySQL", "JSON"]
+    }
+]
