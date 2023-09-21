@@ -5,7 +5,8 @@
         "course": "TDP003",
         "small_img": "../static/csharp.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -13,7 +14,8 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["Dart", "JavaScript", "CSS", "Flutter", "MongoDB"]
+        "techniques_used": ["Dart", "JavaScript", "CSS", "Flutter", "MongoDB"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -21,7 +23,8 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -29,7 +32,8 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -37,7 +41,8 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -45,7 +50,8 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"]
+        "techniques_used": ["C#", "MySQL", "JSON"],
+        "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
@@ -53,6 +59,7 @@
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON","C++", "React", "Angular"]
+        "techniques_used": ["C#", "MySQL", "JSON","C++", "React", "Angular"],
+        "start_date": "2023-05-19"
     }
 ]

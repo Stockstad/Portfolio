@@ -1,31 +1,48 @@
-let letter = 0;
-var interval;
+"use strict";
 
-function begin(){
-   
-    interval = setInterval(welcome_message, 15);
-    
-    
-}
+const tech_buttons = document.querySelectorAll(".p-button");
+const selected_techs = [];
 
+tech_buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const value = button.value;
 
-function welcome_message() {
-    let text = "Welcome to my website! Here you can find a little bit about me and my projects. Please check out my socials down below! ;)";
-    const message = text.split("")
-    document.getElementById('mess').innerHTML += message[letter];
-    letter+=1;
-    if (letter === message.length) {
-        clearInterval(interval);
+    if (!selected_techs.includes(value)) {
+      button.style.opacity = "50%";
+      selected_techs.push(value);
+
+      updateTechButtons();
+      
     }
-}
+    else {
+      button.style.opacity = "100%";
+      selected_techs.pop(value);
 
-// Get all buttons with the "toggle-button" class
-const buttons = document.querySelectorAll(".p-button");
+      updateTechButtons();
+    }
 
-// Add a click event listener to each button
-buttons.forEach(button => {
-  button.addEventListener("click", function() {
-    // Toggle the "active" class on each button individually
-    this.classList.toggle("active");
   });
 });
+
+function updateTechButtons() {
+  document.getElementById('debug').innerHTML = selected_techs;
+  console.log()
+  sendData(selected_techs);
+
+
+}
+
+function sendData(st) {
+  $.ajax({
+      url: '/process',
+      type: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify(st),
+      success: function(response) {
+          console.log(response)
+      },
+      error: function(error) {
+          console.log(error);
+      }
+  });
+}
