@@ -6,14 +6,16 @@ app = Flask(__name__)
 app.secret_key = 'very_secret'
 
 
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    session['db'] = data.load("test_data.json")
     session['dtek'] = []
     return render_template('index.html')
 
 @app.route('/techniques')
 def techniques():
-    pl = data.load("test_data.json")
+    pl = session['db']
     techniques = data.get_techniques(pl)
     return render_template('techniques.html', techniques=techniques, dtek=session['dtek'])
 
@@ -23,14 +25,14 @@ def contact():
 
 @app.route('/list')
 def list():
-    pl = data.load("test_data.json")
+    pl = session['db']
     techniques = data.get_techniques(pl)
     return render_template('list.html', pl=pl, techniques=techniques)
 
 
 @app.route('/list', methods=['GET', 'POST'])
 def list_post():
-    pl = data.load("test_data.json")
+    pl = session['db']
     techniques = data.get_techniques(pl)
 
     text = request.form['text']
@@ -45,8 +47,8 @@ def list_post():
     #buttons = request.form['checkbox']
     projects = data.search(pl, sort_by="project_id", sort_order="asec", techniques=[], search=text, search_fields=None)
 
-    return orderbuttons
-    #return render_template('list.html',pl=projects, techniques=techniques)
+    #return orderbuttons
+    return render_template('list.html',pl=projects, techniques=techniques)
 
 
 #@app.route('/formsub', methods=['POST'])

@@ -17,7 +17,6 @@ tech_buttons.forEach(button => {
     else {
       button.style.opacity = "100%";
       selected_techs.pop(value);
-
       updateTechButtons();
     }
 
@@ -28,7 +27,6 @@ function updateTechButtons() {
   document.getElementById('debug').innerHTML = selected_techs;
   console.log()
   sendData(selected_techs);
-
 
 }
 
