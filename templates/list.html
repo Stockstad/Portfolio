@@ -22,17 +22,16 @@
         </div>
     </section>
     <section class="selection-bar">
-        <form method="POST" action="{{ url_for('list')}}">
-            <select class="selection-item">
+        <form method="post">
+            <select class="selection-item" name="sortby">
                 <option value="" disabled selected>Select sort by</option>
-                <option value="date">Date</option>
-                <option value="name">Name</option>
+                <option value="date" name="date">Date</option>
+                <option value="name" name="name">Name</option>
             </select>
-            <select name="sortby" class="selection-item">
+            <select class="selection-item" name="sortorder">
                     <option value="" disabled selected>Select sort order</option>
-                {% for d in data %}
-                    <option value="{{d.name}}" placeholder="Order by">{{d.name}}</option>
-                {% endfor %}
+                    <option value="desc" name="desc">Decending</option>
+                    <option value="asc" name="asc">Acending</option>
             </select>
         </form>
     </section>
@@ -41,7 +40,7 @@
             <input type="checkbox" value="{{t}}">{{t}}
         {% endfor %}
     </section>
-        {% for p in pl %}
+        {% for p in projects %}
             <section class="info">
                 <div>
                     <img src="{{ p['small_img'] }}" alt="Project Logo">

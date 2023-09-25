@@ -2,6 +2,7 @@
 
 const tech_buttons = document.querySelectorAll(".p-button");
 const selected_techs = [];
+const apply_button = document.getElementById("apply-button");
 
 tech_buttons.forEach(button => {
   button.addEventListener("click", () => {
@@ -25,8 +26,6 @@ tech_buttons.forEach(button => {
 
 function updateTechButtons() {
   document.getElementById('debug').innerHTML = selected_techs;
-  console.log()
-  sendData(selected_techs);
 
 }
 
@@ -37,10 +36,19 @@ function sendData(st) {
       contentType: 'application/json',
       data: JSON.stringify(st),
       success: function(response) {
-          console.log(response)
+          console.log(response);
+          location.reload();
+          selected_techs = [];
       },
       error: function(error) {
           console.log(error);
       }
   });
 }
+
+apply_button.addEventListener("click", () => {
+  sendData(selected_techs);
+});
+
+
+

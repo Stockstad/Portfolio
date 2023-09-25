@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+
+    <nav class="flex-nav">
+        <a href="{{ url_for('index')}}"><p class="nav-text nav-active">Home</p></a>
+        <a href="{{ url_for('list')}}" ><p class="nav-text ">Projects</p></a>
+        <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
+    </nav>
+    <section class="intro">
+        <h4>Welcome, {{ user }}! </h4>
+        <form method="post">
+            Name: <input type="text" id="project_name" required>
+            Course: <input type="text" id="course_name">
+            Start Date: <input type="date" id="start_date">
+            End Date: <input type="date" id="end_date">
+            <input type="submit">
+        </form>
+    </section>
+    
+    
+    <footer>
+        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
+    </footer>
+</body>
+</html>

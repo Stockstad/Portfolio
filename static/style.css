@@ -32,6 +32,9 @@ main {
     .flex-nav {
         flex-direction: column;
     }
+    .info {
+        justify-content: center;
+    }
 
 }
 
@@ -137,12 +140,12 @@ p {
 .info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 4em;
+    justify-content: left; margin-left: 4em;
     margin-right: 4em;
     margin-top: 2em;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em;
 
 }
 
@@ -199,10 +202,11 @@ img {
 .img-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin-left: 3em;
+    margin-right: 3em;
     
 
 }
@@ -231,3 +235,14 @@ img {
 
 }
 
+#apply-button {
+    background-color: #9FA0FF;
+    color: white;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-top: 1em;
+    width: 8em;
+    height: 1.5em;
+    font-size: 2em;
+
+}
