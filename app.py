@@ -27,7 +27,7 @@ def contact():
 def list():
     pl = session['db']
     techniques = data.get_techniques(pl)
-    return render_template('list.html', pl=pl, techniques=techniques)
+    return render_template('list.html', pl=pl, techniques=techniques, data=[{"name": "aescending"}, {"name": "descending"}])
 
 
 @app.route('/list', methods=['GET', 'POST'])
@@ -41,14 +41,16 @@ def list_post():
         text = None
 
    
-    orderbuttons = request.form.get("sortby")
+    orderbuttons = request.form.get('sortby')
     #reqorder = orderbuttons['sortby']
 
     #buttons = request.form['checkbox']
     projects = data.search(pl, sort_by="project_id", sort_order="asec", techniques=[], search=text, search_fields=None)
 
-    #return orderbuttons
-    return render_template('list.html',pl=projects, techniques=techniques)
+    orderbuttons = str(orderbuttons)
+
+    return orderbuttons
+    #return render_template('list.html',pl=projects, techniques=techniques)
 
 
 #@app.route('/formsub', methods=['POST'])

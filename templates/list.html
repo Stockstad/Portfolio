@@ -22,21 +22,23 @@
         </div>
     </section>
     <section class="selection-bar">
-        <form method="POST" action="/list">
+        <form method="POST" action="{{ url_for('list')}}">
             <select class="selection-item">
-                <option value="default">Order by</option>
+                <option value="" disabled selected>Select sort by</option>
                 <option value="date">Date</option>
                 <option value="name">Name</option>
             </select>
             <select name="sortby" class="selection-item">
-                <option value="asec">Ascending</option>
-                <option value="desc">Decending</option>
+                    <option value="" disabled selected>Select sort order</option>
+                {% for d in data %}
+                    <option value="{{d.name}}" placeholder="Order by">{{d.name}}</option>
+                {% endfor %}
             </select>
         </form>
     </section>
     <section class="selection-bar">
         {% for t in techniques %}
-            <input type="checkbox" value="{{t}}">{{t}}</input>
+            <input type="checkbox" value="{{t}}">{{t}}
         {% endfor %}
     </section>
         {% for p in pl %}
