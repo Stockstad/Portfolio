@@ -9,11 +9,9 @@
 </head>
 <body>
 
-    <nav class="flex-nav">
-        <a href="{{ url_for('index')}}"><p class="nav-text nav-active">Home</p></a>
-        <a href="{{ url_for('list')}}" ><p class="nav-text ">Projects</p></a>
-        <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
-    </nav>
+    {% extends "layout.html" %}
+
+    {% block content %}
     <section class="intro">
         <form method="post">
             Username: <input type="text" name="username" required>
@@ -26,8 +24,6 @@
         </section>
     
     
-    <footer>
-        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
-    </footer>
+        {% endblock %}
 </body>
 </html>

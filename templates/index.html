@@ -9,11 +9,9 @@
 </head>
 <body>
 
-    <nav class="flex-nav">
-        <a href="{{ url_for('index')}}"><p class="nav-text nav-active">Home</p></a>
-        <a href="{{ url_for('list')}}" ><p class="nav-text ">Projects</p></a>
-        <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
-    </nav>
+    {% extends "layout.html" %}
+
+    {% block content %}
     <section class="intro">
         <img src="../static/person.png" alt="person">
         <h1>Welcome to the website!</h1>
@@ -30,8 +28,6 @@
         <img src="../static/x.webp" alt="X Logo" class="social-pic">
     </section>
     
-    <footer>
-        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
-    </footer>
+    {% endblock %}
 </body>
 </html>

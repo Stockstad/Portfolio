@@ -7,11 +7,9 @@
     <title>Projects</title>
 </head>
 <body>
-    <nav class="flex-nav">
-        <a href="{{ url_for('index')}}"><p class="nav-text">Home</p></a>
-        <a href="{{ url_for('list')}}" ><p class="nav-text nav-active">Projects</p></a>
-        <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
-    </nav>
+    {% extends "layout.html" %}
+
+    {% block content %}
 
     <section class="search-bar">
         <div class="search-bar">
@@ -57,8 +55,6 @@
         {% endfor %}
 
       
-    <footer>
-        <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
-    </footer>
+    {% endblock %}
 </body>
 </html>
