@@ -3,6 +3,8 @@
 const tech_buttons = document.querySelectorAll(".p-button");
 const selected_techs = [];
 const apply_button = document.getElementById("apply-button");
+const add_tech_button = document.getElementById("add-tech");
+let tech_to_add = [];
 
 tech_buttons.forEach(button => {
   button.addEventListener("click", () => {
@@ -38,8 +40,8 @@ function sendData(st) {
       success: function(response) {
           console.log(response);
           location.reload();
-          selected_techs = [];
-      },
+          selected_techs = [];_
+      }, 
       error: function(error) {
           console.log(error);
       }
@@ -49,6 +51,21 @@ function sendData(st) {
 apply_button.addEventListener("click", () => {
   sendData(selected_techs);
 });
+
+
+add_tech_button.addEventListener("click", () => {
+
+  const tech_field = document.getElementById("tech-display");
+  let tech = add_tech_button.text;
+  tech_field.innerHTML = "WOW";
+
+  if (tech != "" && !tech_to_add.includes(tech)) {
+    tech_field.innerHTML += tech;
+    tech_to_add.push(tech);
+  }
+
+});
+
 
 
 

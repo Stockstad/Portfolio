@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta viewport="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
-    <script src="../static/script.js"></script>
+
     <title>Admin Panel</title>
 </head>
 <body>
@@ -16,16 +16,21 @@
     </nav>
     <section class="intro">
         <h4>Welcome, {{ user }}! </h4>
-        <form method="post">
             Name: <input type="text" id="project_name" required>
             Course: <input type="text" id="course_name">
+            <br>
+            <br>
             Start Date: <input type="date" id="start_date">
             End Date: <input type="date" id="end_date">
-            <input type="submit">
-        </form>
+            <br>
+            <br>
+            Techniques<input type="text" id="tech-box"> <button id="add-tech">Add </button><br>
+            <div id="display-tech"></div>
+            <br>
+            <br>
     </section>
     
-    
+    <script src="../static/script.js"></script>
     <footer>
         <p class="footer-text">Johan Törner och Linus Nordin, 12 September 2023, Version 1.0, TDP003, Egna datormiljön</p>
     </footer>

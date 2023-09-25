@@ -42,34 +42,6 @@ def list():
 
 
 
-@app.route('/list', methods=['GET', 'POST'])
-def list_post():
-    pl = session['db']
-    techniques = data.get_techniques(pl)
-
-    text = request.form['text']
-    text = text.lower()
-    if text == "":
-        text = None
-
-   
-    orderbuttons = request.form.get('sortby')
-    #reqorder = orderbuttons['sortby']
-
-    #buttons = request.form['checkbox']
-    projects = data.search(pl, sort_by="project_id", sort_order="asec", techniques=[], search=text, search_fields=None)
-
-    orderbuttons = str(orderbuttons)
-
-    return orderbuttons
-    #return render_template('list.html',pl=projects, techniques=techniques)
-
-
-#@app.route('/formsub', methods=['POST'])
-#def formsub():
-#    orderbuttons = request.form.get('sortby')
-#    print(orderbuttons)
-#    return orderbuttons
 
 
 @app.route('/project')
