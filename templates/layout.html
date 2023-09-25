@@ -1,7 +1,12 @@
 <nav class="flex-nav">
-    <a href="{{ url_for('index')}}"><p class="nav-text">Home</p></a>
-    <a href="{{ url_for('list')}}" ><p class="nav-text nav-active">Projects</p></a>
-    <a href="{{ url_for ('techniques')}}"><p class="nav-text">Techniques</p></a>
+    {% for i in [{"url": "index", "name": "Home"}, {"url": "list", "name": "Projects"}, {"url": "techniques", "name": "Techniques"}] %}
+
+        {% if request.url_rule.endpoint == i['url'] %}
+            <a href="{{ url_for(i['url'])}}"><p class="nav-text nav-active">{{i['name']}}</p></a>
+        {% else %}
+            <a href="{{ url_for(i['url'])}}"><p class="nav-text">{{i['name']}}</p></a>
+        {% endif %}
+    {% endfor %}
 </nav>
 
 <!-- Above this is header -->

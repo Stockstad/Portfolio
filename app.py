@@ -46,7 +46,7 @@ def list():
 
 @app.route('/project')
 def project():
-    return render_template('project.html')
+    return render_template('project.html') 
 
 @app.route('/process', methods=['POST'])
 def process():
