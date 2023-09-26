@@ -35,6 +35,8 @@ def list():
         search_key = request.form['text']
         sort_order = request.form.get('sortorder')
         sort_by = request.form.get('sortby')
+        
+
         print(str(sort_order))
         projects = data.search(db=pl, sort_by=sort_by, sort_order=sort_order, techniques=[], search=search_key, search_fields=None)
         return render_template('list.html', projects=projects)
