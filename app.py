@@ -46,9 +46,13 @@ def list():
 
 
 
-@app.route('/project')
-def project():
-    return render_template('project.html')
+@app.route('/project/<int:project_id>')
+def project(project_id):
+    project = data.get_project(session['db'], project_id)
+    if project == None:
+        return "Project not found", 404
+    
+    return render_template('project.html', project=project)
 
 @app.route('/process', methods=['POST'])
 def process():
@@ -90,7 +94,7 @@ def panel():
             return render_template('panel.html', user=user)
         else:
             return redirect(url_for('login'))
-            
+                    
 
 
 

@@ -6,56 +6,21 @@
         "small_img": "../static/csharp.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
         "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19"
+        "start_date": "2023-05-19",
+        "desc": "This project was created using the best programming language out there -- C#!"
     },
     {
-        "name": "Ruby-Project",
+        "name": "TS-Project",
         "project_id": 2,
         "course": "TDP003",
-        "small_img": "../static/ruby.png",
+        "small_img": "../static/ts.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
         "techniques_used": ["Dart", "JavaScript", "CSS", "Flutter", "MongoDB"],
         "start_date": "2023-05-19"
     },
     {
         "name": "Ruby-Project",
-        "project_id": 2,
-        "course": "TDP003",
-        "small_img": "../static/ruby.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19"
-    },
-    {
-        "name": "Ruby-Project",
-        "project_id": 2,
-        "course": "TDP003",
-        "small_img": "../static/ruby.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19"
-    },
-    {
-        "name": "Ruby-Project",
-        "project_id": 2,
-        "course": "TDP003",
-        "small_img": "../static/ruby.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19"
-    },
-    {
-        "name": "Ruby-Project",
-        "project_id": 2,
-        "course": "TDP003",
-        "small_img": "../static/ruby.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19"
-    },
-    {
-        "name": "Ruby-Project",
-        "project_id": 2,
+        "project_id": 3,
         "course": "TDP003",
         "small_img": "../static/ruby.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
@@ -64,9 +29,9 @@
     },
     {
         "name": "Infinity:th JS framework",
-        "project_id": 3,
+        "project_id": 4,
         "course": "TDPUU",
-        "small_img": "..static/ruby.png",
+        "small_img": "../static/mongodb.png",
         "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
         "techniques_used": ["JavaScript", "AJAX", "C", "WebAssemby"],
         "start_date": "1996-07-12"

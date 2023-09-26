@@ -12,41 +12,17 @@
     {% block content %}
 
     <section class="project">
-            <h2>C# Project</h2>
-            <img src="../static/csharp.png" alt="C# Logo">
+            <h2>{{ project['name'] }}</h2>
+            <img src="{{ project['small_img'] }}" alt="C# Logo">
             <ul>
-                <li><h4>C# Project</h4></li>
-                <li><h4>Course: TDP003</h4></li>
-                <li><h4>Techniques: C#, JSON, SQL</h4></li>
-                <li><h4>Link: <a href="">ex</a></h4></li>
+                <li><h4>{{ project['name'] }}</h4></li>
+                <li><h4>ID: {{ project['project_id']}}</h4></li>
+                <li><h4>Course: {{ project['course'] }}</h4></li>
+                <li><h4>Start Date: {{ project['start_date'] }}</h4></li>
+                <li><h4>Techniques: {{ project['techniques_used'] }}</h4></li>
+                <li><h4><a href="{{ project['repos_link'] }}">Go to repository</a></h4></li>
             </ul>
-            <p>
-                Take this kiss upon the brow!
-                And, in parting from you now,
-                Thus much let me avow —
-                You are not wrong, who deem
-                That my days have been a dream;
-                Yet if hope has flown away
-                In a night, or in a day,
-                In a vision, or in none,
-                Is it therefore the less gone? 
-                All that we see or seem
-                Is but a dream within a dream.
-
-                I stand amid the roar
-                Of a surf-tormented shore,
-                And I hold within my hand
-                Grains of the golden sand —
-                How few! yet how they creep
-                Through my fingers to the deep,
-                While I weep — while I weep!
-                O God! Can I not grasp
-                Them with a tighter clasp?
-                O God! can I not save
-                One from the pitiless wave?
-                Is all that we see or seem
-                But a dream within a dream?
-            </p>
+            <p>{{ project['desc'] }}</p>
     </section>
     
 
