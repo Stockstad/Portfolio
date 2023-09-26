@@ -10,17 +10,15 @@
     {% extends "layout.html" %}
 
     {% block content %}
-
-    <section class="search-bar">
-        <div class="search-bar">
-            <form method="POST">
+    <form method="POST">
+        <section class="search-bar">
+            <div class="search-bar">
                 <input name="text" id="search-input" placeholder="Search">
                 <button type="submit" id="search-btn"> 🔎 </button>
-            </form>
-        </div>
-    </section>
-    <section class="selection-bar">
-        <form method="post">
+            </div>
+        </section>
+        <section class="selection-bar">
+
             <select class="selection-item" name="sortby">
                 <option value="" disabled selected>Select sort by</option>
                 <option value="date" name="date">Date</option>
@@ -29,10 +27,12 @@
             <select class="selection-item" name="sortorder">
                     <option value="" disabled selected>Select sort order</option>
                     <option value="desc" name="desc">Decending</option>
-                    <option value="asc" name="asc">Acending</option>
+                    <option value="asec" name="asc">Acending</option>
+                    
             </select>
-        </form>
-    </section>
+
+        </section>
+    </form>
     <section class="selection-bar">
         {% for t in techniques %}
             <input type="checkbox" value="{{t}}">{{t}}
