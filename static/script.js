@@ -4,12 +4,12 @@ const tech_buttons = document.querySelectorAll(".p-button");
 const selected_techs = [];
 const apply_button = document.getElementById("apply-button");
 const add_tech_button = document.getElementById("add-tech");
+const tech_box = document.getElementById("tech-box");
 let tech_to_add = [];
 
 tech_buttons.forEach(button => {
   button.addEventListener("click", () => {
     const value = button.value;
-
     if (!selected_techs.includes(value)) {
       button.style.opacity = "50%";
       selected_techs.push(value);
@@ -50,20 +50,6 @@ function sendData(st) {
 
 apply_button.addEventListener("click", () => {
   sendData(selected_techs);
-});
-
-
-add_tech_button.addEventListener("click", () => {
-
-  const tech_field = document.getElementById("tech-display");
-  let tech = add_tech_button.text;
-  tech_field.innerHTML = "WOW";
-
-  if (tech != "" && !tech_to_add.includes(tech)) {
-    tech_field.innerHTML += tech;
-    tech_to_add.push(tech);
-  }
-
 });
 
 

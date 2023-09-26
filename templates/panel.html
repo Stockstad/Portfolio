@@ -14,21 +14,28 @@
     {% block content %}
     <section class="intro">
         <h4>Welcome, {{ user }}! </h4>
-            Name: <input type="text" id="project_name" required>
-            Course: <input type="text" id="course_name">
+        <form method="POST">
+            Name: <input type="text" id="project-name" required>
+            Course: <input type="text" id="course-name">
             <br>
             <br>
-            Start Date: <input type="date" id="start_date">
-            End Date: <input type="date" id="end_date">
+            Start Date: <input type="date" id="start-date">
+            End Date: <input type="date" id="end-date">
             <br>
             <br>
-            Techniques<input type="text" id="tech-box"> <button id="add-tech">Add </button><br>
-            <div id="display-tech"></div>
+            Techniques :<input type="text" id="tech-box">
             <br>
+            Repository Link:<input type="text" id="repo-link">
             <br>
+            Small Image: <input type="file" id="small-img">
+            Large Image: <input type="file" id="large-img">
+            <br>
+            Description: <input type="text" id="project-description">
+            <input type="submit" value="Submit Project">
+        </form>
+        
     </section>
     
-    <script src="../static/script.js"></script>
     {% endblock %}
 </body>
 </html>
