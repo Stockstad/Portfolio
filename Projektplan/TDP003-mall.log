@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.1)  21 SEP 2023 10:40
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.1)  27 SEP 2023 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,159 +739,173 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 19.
 [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 64--71
+] [1] (./TDP003-mall.toc)
+\tf@toc=\write5
+\openout5 = `TDP003-mall.toc'.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--71
-
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 73--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 96.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 119.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 142.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 165.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 77--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 87--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 202.
+               Default added (so using `htbp') on input line 100.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 249--256
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--256
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-[5] 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 124.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 147.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 174.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 218.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 268--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--275
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
+
+ []
+
+
 AED: lastpage setting LastPage
-[6] (./TDP003-mall.aux)
+[9] (./TDP003-mall.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
@@ -900,15 +914,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `TDP003-mall.out' has not changed.
-(rerunfilecheck)             Checksum: 1CC2A9EAD8C538776EC6F95EBD40D459;2659.
+(rerunfilecheck)             Checksum: EC1C01543CB0E449972A2F57B9C21691;2820.
  ) 
 Here is how much of TeX's memory you used:
- 23250 strings out of 477628
- 480436 string characters out of 5840664
- 831893 words of memory out of 5000000
- 43517 multiletter control sequences out of 15000+600000
+ 23256 strings out of 477628
+ 480520 string characters out of 5840664
+ 832067 words of memory out of 5000000
+ 43520 multiletter control sequences out of 15000+600000
  471250 words of font info for 43 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  115i,11n,118p,554b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TDP003-mall.pdf (7 pages).
+Output written on TDP003-mall.pdf (10 pages).

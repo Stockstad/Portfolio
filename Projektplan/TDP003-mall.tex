@@ -9,7 +9,7 @@
 \author{Johan Törner, \url{johto839@student.liu.se}\\
   Linus Nordin, \url{linno988@student.liu.se}}
 \title{Projektplan}
-\date{2023-09-18}
+\date{2023-09-27}
 \rhead{Johan Törner\\
 Linus Nordin\\}
 
@@ -23,10 +23,14 @@ Linus Nordin\\}
 \hline
 Ver. & Revisionsbeskrivning & Datum \\\hline
 1.0 & Första versionen & 23-09-20\\\hline
+1.1 & Tagit bort TailwindCSS då det inte kommer användas.  Ändrat på milstolpar. Korrigerat veckouppdelningen så att den nu inkluderar alla givna moment. Lagt till reflektionsdokumentet i planen. Lagt till en innehållsförteckning. Uppdaterat åtgången tid. Korrigerat till passiv form.& 23-09-27\\\hline
 \end{tabularx}
 \end{table}
+\pagebreak
 
+\tableofcontents
 
+\pagebreak
 \section{Inledning}
 Projektets syfte är att skapa en portfolio som innehåller de projekt som skapas under IP-programmet. 
 Portfolion är en webbsida vairfrån en användare kan söka på projekt som ligger i en databas. Ansvariga för projektet 
@@ -37,11 +41,11 @@ som specificerats.
 \section{Arbetssätt}
 
 \subsection{Tekniker}
-De tekniker som kommer att användas i projektets gång är följande: Python, HTML, CSS, TailwindCSS, Flask, Jinja2, JSON, Git samt Latex. 
+De tekniker som kommer att användas i projektets gång är följande: Python, HTML, CSS, Flask, Jinja2, JSON, Git samt Latex. 
 
 \subsubsection{Backend}
 På backend används Python, Flask, JSON samt Jinja2. Flask är ett lightweight-framework för webben baserat på Python.
-Tillsammans med Jinja2 kan vi rendera HTML direkt från servern. Dessutom använder vi JSON för att spara informaton om varje projekt vairfrån
+Tillsammans med Jinja2 kan sidan rendera HTML direkt från servern. Dessutom används JSON för att spara informaton om varje projekt vairfrån
 användaren sedan kan hämta dem. Dessutom består backend av en API skriven i Python.
 Denna API används sedan av Flask för att läsa in, men också skriva ut, till databasen där
 projekten sparas. 
@@ -58,7 +62,6 @@ ladda om hela sidan.
 Git används för versionhantering. Latex används för dokumentskrivning. För mer information
 på hur Git används i projektet, se \textbf{\textit{Rutiner}}.
 
-\vspace{16em}
 
 \section{Planering}
 Planeringens huvudstyfte är att projektet ska hållas i rätt tidsfas och att projektmedlemmarna alltså har en överblick över när och vad som ska vara klart.
@@ -68,29 +71,30 @@ I det fall en korrigering måste göras markeras denna prirotet med ett ?. \\
 Under denna vecka markeras det som måste arbetas med under veckan.\\
 Under övrigt nämns det som borde göras men kan utelämnas om tid inte finns.\\
 Under eventuellt läggs saker som inte finns i kravspecifikationen eller korrigeringar. \\
+\pagebreak
 
-
+\subsection{Givna Deadlines}
 Måndag 04-09: Gruppkontraktet\\
 Tisdag 12-09: Tidsplanen\\
 Fredag 15-09: LoFi-prototypen\\
-Torsdag 21-09: Installationsmanualen v1, Projektplan utkast\\
+Torsdag 21-09: Installationsmanualen, Projektplan\\
 Torsdag 28-09: Installationsmanualen, Projektplan (brister återgärdade)\\
 Fredag 29-09: Datalagret\\
 Torsdag 12-10: Publicering av Portfolio, Systemdokumentation v1\\
-Torsdag 19-10: Systemdokumentation (brister återgärdade)\\
+Torsdag 19-10: Systemdokumentation (brister återgärdade), Reflektionsdokument\\
 
 \subsection{Milstolpar}
-Måndag: 25-09: Datalagrets API-funktioner klara.\\
-Onsdag 27-09: Mainprogram till API klar. (Backend med Flask)\\
-Onsdag 02-10: Möjlighet att söka på hemsidan och få upp projekt.\\
-Fredag 06-10: Adminpanel klar. (Låg prio)\\
+Fredag 29-09: Möjligt att logga in som admin.\\
+Måndag 02-10: Möjlighet att söka på hemsidan och få upp projekt.\\
+Onsdag 04-10: Klick på projekt ska leda till projektsidan.\\
+Fredag 06-10: Möjlighet att genom adminpanel lägga till projekt.\\
 
 \subsection{Veckouppdelning}
 \textbf{(11/9 - 17/9) V.37}\\\\
 Denna vecka: Lofi-prototypen\\
 Övrigt: Studera Flask, Jinja2\\
 
-\textbf{Deadlines denna vecka: }\\\\
+\textbf{Deadlines och milstolpar denna vecka: }\\\\
 Fredag: Lofi-prototyp
 
 \begin{table}[]
@@ -104,15 +108,16 @@ Fredag: Lofi-prototyp
   \end{table}
 
 
-  \hrulefill
-  \vspace{6em}
+\hrulefill
+\pagebreak
 
 \textbf{(18/9 - 24/9) V.38}\\\\
+
   Denna vecka: Utkast av projektplanen, Installationsmanualen\\
   Övrigt: Datalagret\\
   Evenutellt: Korrigering av LoFi-prototypen\\
 
-  \textbf{Deadlines denna vecka: }\\\\
+  \textbf{Deadlines och milstolpar denna vecka: }\\\\
   Torsdag: Projektplan Utkast, Installationsmanual v1
 
 
@@ -121,8 +126,8 @@ Fredag: Lofi-prototyp
   \hline
    Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
    1         & Utkast av projektplanen  & 6h          & 5h          \\ \hline
-   1         & Installastionsmanualen  & 4h           & -       \\ \hline
-   1?        & Korrigering LoFi-prototyp &2h          & -       \\ \hline
+   1         & Installastionsmanualen  & 4h           & 6h      \\ \hline
+   1?        & Korrigering LoFi-prototyp &2h          & 1h       \\ \hline
    2         & Första 3 funktioner i Datalageret & 12h           & 2h          \\ \hline
   \end{tabular}
   \end{table}
@@ -131,52 +136,59 @@ Fredag: Lofi-prototyp
 
   \textbf{(25/9 - 01/10) V.39}\\\\
   Denna vecka: Datalagret, Presentationslagret\\
-  Övrigt: Studera TailwindCSS\\
+  Övrigt: Skapande av backend för adminpanel, bl.a. inloggning.\\
   Evenutellt: Korrigering av Projektplan, Installationsmanualen\\
 
-  \textbf{Deadlines denna vecka: }\\\\
+  \textbf{Deadlines och milstolpar denna vecka: }\\\\
   Torsdag: Brister i projektplan och installationsmanual återgärdade.\\
-  Fredag: Datalagret
+  Fredag: Datalagret, Möjlighet att logga in som admin.\\
 
 
 \begin{table}[]
   \begin{tabular}{|l|l|l|l|l|}
   \hline
    Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
-   1         & Resterande funktioner i Datalagret & 12h          & -          \\ \hline
+   1         & Resterande funktioner i Datalagret & 12h          & 5h          \\ \hline
    2        & Presentationslager: Indexsida  & 1h           & -       \\ \hline
    2        & Presentationslager: Listsida &6h          & -       \\ \hline
    2         & Presentationslager: Tekniksida & 4h          & -           \\ \hline
    2         & Presentationslager: Projektsida & 4h         & - \\ \hline
-   1?    & Korrigeringar & 2h         & - \\ \hline
+   3         & Adminpanel: Inloggning & 2h         & - \\ \hline
+   1?    & Korrigeringar  Projektplan, Installationsmanual& 2h         & - \\ \hline
   \end{tabular}
   \end{table}
 
-  \hrulefill
-
+\hrulefill
+\pagebreak
   
 \textbf{(02/10 - 08/10) V.40}\\\\
-Denna vecka: Återgärda fel, Adminpanel\\
-
-\textbf{Deadlines denna vecka: }\\\\
-Inga givna deadlines
+Denna vecka: Klick på projekt ska leda till projektsida\\
+Eventuellt: Återgärda fel i presentationslagret.\\
+Övrigt: Påbörja arbetet med adminpanelens funktioner\\\\
+\textbf{Deadlines och milstolpar denna vecka: }\\\\
+Måndag: Sökning på list-sidan möjligt\\
+Onsdag: Klick på projekt leder till projektsidan\\
+Fredag: Möjligt att lägga till projekt via adminpanelen.\\
 
 
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|}
 \hline
  Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
- 1?        & Återgärda fel  & 12h          & -          \\ \hline
- 2         & Adminpanel & 12h           & -       \\ \hline
+ 1         & Omdirigering till enskild projektsida & 3h           & -       \\ \hline
+ 1?        & Återgärda eventuella fel i presentationslagret & 12h          & -          \\ \hline
+ 2         & Adminpanel: Tillägg av projekt& 8h           & -       \\ \hline
+ 2         & Adminpanel: Ta bort projekt& 2h           & -       \\ \hline
 \end{tabular}
 \end{table}
 
 \vspace{3em}
 
 \textbf{(09/10 - 15/10) V.41}\\\\
-Denna vecka: Systemdokumentation, Publicering av portfolio\\
+Denna vecka: Studera publiceringssystem, Systemdokumentation, Publicering av portfolio\\
+Eventuellet: Återgärda fel  i presentationslagret, adminpanelen\\
 
-\textbf{Deadlines denna vecka: }\\\\
+\textbf{Deadlines och milstolpar denna vecka: }\\\\
 Torsdag: Publicering av portfolio, Systemdokumentation
 
 
@@ -184,35 +196,42 @@ Torsdag: Publicering av portfolio, Systemdokumentation
 \begin{tabular}{|l|l|l|l|l|}
 \hline
  Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
+ 1        & Systempresentation, Publicering        & 2h            & -       \\ \hline
  1         & Systemdokumentationen  & 6h          & -          \\ \hline
  1         & Studera publiceringssystem & 2h           & -       \\ \hline
- 1?        & Återgärda fel              & 4h            & -       \\ \hline
+ 1?        & Återgärda eventuella fel i presentationslagret           & 4h            & -       \\ \hline
+ 2?        & Återgärda eventuella fel i adminpanelen         & 4h            & -       \\ \hline
 \end{tabular}
 \end{table}
 
 \hrulefill
+\pagebreak
 
 \textbf{(16/10 - 22/10) V.42}\\\\
-Denna vecka: Brister Systemdokumentation\\
+Denna vecka: Brister Systemdokumentation, Reflektionsdokument\\
 
-\textbf{Deadlines denna vecka: }\\\\
-Torsdag: Brister i systemdokumentationen återgärdade
+\textbf{Deadlines och milstolpar denna vecka: }\\\\
+Torsdag: Brister i systemdokumentationen återgärdade, Reflektionsdokument
+
 
 
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|}
 \hline
  Prioritet & Uppgift                    & Planerad tid & Åtgången tid \\ \hline
- 1?         & Återgärda fel & 6h          & -          \\ \hline
+ 1         & Reflektionsdokument & 3h          & -          \\ \hline
+ 1?         & Brister i systemdokumentationen & 6h          & -          \\ \hline
 
 \end{tabular}
 \end{table}
 
 \hrulefill
 
-\section{Innehåll}
+\pagebreak
+
+\section{Beståndsdelar}
 Enligt de specifikationer som givits kommer sidan att ha en Homepage, en List-sida, 
-en Project-sida samt en Techniques-sida. Till detta, om tid finns, tillför vi en
+en Project-sida samt en Techniques-sida. Till detta, om tid finns, tillförs en
 adminpanel varifrån portfolions ägare kan lägga till projekt utan att behöva gå in i
 databasen. Nedan följer beskrivingar för de olika delarnas funktionalitet. I övrigt kan
 en se mer detaljerad information om frontend i \textbf{\textit{lofi-prototypen}}.
@@ -253,6 +272,8 @@ samt en länk till en projektsida.\\\\
 Datan lagras i JSON och hanteras med Flask och skrivs ut i HTML med hjälp av Jinja2.\\\\
 Ett krav är att data ska kunna redigeras direkt i JSON-filer utan att servern startas om.
 Detta är dock en självklarhet i det fall att en adminpanel implementeras.
+
+\pagebreak
 
 \section{Risker och Riskhantering}
 I och med projektets gång kan risker uppstå. Den mest framträdande av dessa risker
