@@ -32,14 +32,15 @@ def list():
         return render_template('list.html', pl=pl, techniques=techniques)
     else:
         pl = session['db']
+        techniques = data.get_techniques(pl)
         search_key = request.form['text']
         sort_order = request.form.get('sortorder')
         sort_by = request.form.get('sortby')
-        
+        techs = request.form.getlist('techniques')
 
         print(str(sort_order))
-        projects = data.search(db=pl, sort_by=sort_by, sort_order=sort_order, techniques=[], search=search_key, search_fields=None)
-        return render_template('list.html', projects=projects)
+        projects = data.search(db=pl, sort_by=sort_by, sort_order=sort_order, techniques=techs, search=search_key, search_fields=None)
+        return render_template('list.html', projects=projects, techniques=techniques)
 
 
 

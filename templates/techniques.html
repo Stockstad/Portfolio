@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <ul>
-                            <a href="dummy"><li><h4><u>{{ p['name'] }} </u></h4></li></a>
+                            <a href="{{ url_for('project', project_id=p['project_id']) }}"><li><h4><u>{{ p['name'] }} </u></h4></li></a>
                             <li><h4>Course: {{ p['course'] }}</h4></li>
                             <li><h4>Techniques: {{ p['techniques_used']}}</h4></li>
                             <li><h4>Link: <a href="{{ p['repos_link'] }}">Repository</a></h4></li>
