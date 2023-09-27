@@ -32,12 +32,13 @@
             </select>
 
         </section>
+        <section class="selection-bar">
+            {% for t in techniques %}
+                <input type="checkbox" value="{{t}}">{{t}}
+            {% endfor %}
+        </section>
     </form>
-    <section class="selection-bar">
-        {% for t in techniques %}
-            <input type="checkbox" value="{{t}}">{{t}}
-        {% endfor %}
-    </section>
+
         {% for p in projects %}
             <section class="info">
                 <div>

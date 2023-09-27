@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  21 SEP 2023 14:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  27 SEP 2023 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,60 +793,83 @@ Overfull \hbox (4.5157pt too wide) in paragraph at lines 40--49
 [] 
  []
 
+File: ./images//git_version.png Graphic file (type bmp)
+<./images//git_version.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
 File: ./images//emacs_version.png Graphic file (type bmp)
 <./images//emacs_version.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
 
-Overfull \hbox (4.5157pt too wide) in paragraph at lines 51--58
+Overfull \hbox (4.5157pt too wide) in paragraph at lines 59--66
 [] 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
 File: ./images//extensions.png Graphic file (type bmp)
 <./images//extensions.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
+[2]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -854,29 +877,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 F
+l.82 F
       ör att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
-[2]
 File: ./images//flask_run.png Graphic file (type bmp)
 <./images//flask_run.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
@@ -891,13 +913,13 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Installationsmanual.out' has not changed.
-(rerunfilecheck)             Checksum: 2786C9A8069B9C419A1CF791A7E5E095;841.
+(rerunfilecheck)             Checksum: FB8C41D4D2032EE572C50AC4957F1475;899.
  ) 
 Here is how much of TeX's memory you used:
- 23199 strings out of 478190
- 480196 string characters out of 5854828
- 819794 words of memory out of 5000000
- 43431 multiletter control sequences out of 15000+600000
+ 23217 strings out of 478190
+ 480635 string characters out of 5854828
+ 820873 words of memory out of 5000000
+ 43449 multiletter control sequences out of 15000+600000
  471242 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,11n,118p,544b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
