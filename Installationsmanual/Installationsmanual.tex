@@ -37,7 +37,8 @@ Alla kommandon körs genom Linux-terminalen, som öppnas med Ctrl-Alt-T.\\
 
 
 \section{Python3}
-Det första som måste installeras är Python3.\\ 
+Det första som måste installeras är Python3.\\
+Python-versionen som används inom detta projekt är 3.10\\ 
 Kommandot för att installera Python3;\\\\
 \textbf{sudo apt-get install python3}\\\\
 Man bör kolla att python3 och pip är installerat med\\\\
@@ -46,6 +47,14 @@ Ibland så kan det bli så att pip inte installeras.\\
 Om terminalen ger en error så kan pip installeras med följande kommando\\\\
 \textbf{sudo apt-get install pip}\\\\
 \includegraphics[scale=0.5]{pip_version}
+
+\section{Git}
+Versionshanterar-systemet Git är också ett krav.\\ 
+Vi kan installera Git genom terminalen med kommandot;\\\\
+\textbf{sudo apt-get install git-all}\\\\
+Då borde Git vara installerat, man kan kolla att det gick rätt med versionskommandot;\\\\
+\textbf{git version}\\\\
+\includegraphics[scale=0.5]{git_version}
 
 \section{Emacs}
 Installationen av Emacs sker genom terminalen.\\
@@ -72,8 +81,10 @@ Då installeras även Pylance.\\\\
 
 \section{Flask}\\
 För att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
+Jinja2 behövs för att kunna rendera sidan, men vi kommer få med Jinja2 med installation av Flask.\\ 
 Vi använder oss av Pip för att installera Flask.\\\\
-\textbf{pip install Flask}\\
+\textbf{pip install Flask}\\\\
+Nu är både Flask och Jinja2 installerat.\\
 \subsection{Att köra Flask}
 För att köra Flask så bör man stå i katalogen för projektets app.py och sedan köra kommandot\\\\
 \textbf{flask run}\\\\
