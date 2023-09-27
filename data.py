@@ -34,6 +34,9 @@ def search(db, sort_by="start_date", sort_order="desc", techniques=[], search=No
             if search == None:
                 if techniques_allowed(project, techniques):
                     response.append(project)
+            elif search == "":
+                 if techniques_allowed(project, techniques):
+                    response.append(project)
             else:
                 for key in project:
                     if type(project[key]) == str:
