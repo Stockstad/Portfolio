@@ -3,11 +3,11 @@
 \usepackage{caption}
 
 
-\newcommand{\version}{Version 1.0}
-\author{Johan Törner, \url{daniel.o.persson@liu.se}\\
-  Linus Nordin, \url{emanuel.kinberger@liu.se}\\}
+\newcommand{\version}{Version 1.1}
+\author{Johan Törner, \url{johto839@student.liu.se}\\
+  Linus Nordin, \url{linno988@student.liu.se}\\}
 \title{Installationsmanual}
-\date{2023-09-27}
+\date{2023-09-29}
 \rhead{Linus Nordin\\
 Johan Törner}
 
@@ -23,7 +23,7 @@ Johan Törner}
 \hline
 Ver. & Revisionsbeskrivning & Datum \\\hline
 1.0 & Första Versionen & 230921 \\\hline
-1.1 & Korrigerad Verison & 230927 \\\hline
+1.1 & Korrigerad Verison & 230929 \\\hline
 \end{tabularx}
 \end{table}
 
@@ -55,6 +55,27 @@ Om terminalen ger en error så kan pip installeras med följande kommando\\\\
 \end{figure}
 % \includegraphics[scale=0.5]{pip_version}
 \caption*{Figur 1. Pip version check}
+\subsection{Virtual Environment}\\
+Virtual Environments används inom Python för att kunna ha flera olika versioner för olika projekt.\\
+Om vi vill kunna använda så måste vi först installera det relevanta venv paketet.\\\\
+\textbf{sudo apt install python3.10-venv}\\\\
+Med det paketet installerat så kan vi skapa vår virtual environment.\\
+Vi måste se till att stå i projektets mapp när vi kör detta kommando.\\\\
+\textbf{python3 -m venv env}\\\\
+Efter vi har skapat environmenten så måste vi aktivera den, vilket vi gör med följande kommando.\\\\
+\textbf{source env/bin/activate}\\\\
+När den är aktiverad så kommer vi använda Python-versionen som ligger inom vår virtual environment.\\
+Det vi installerar med pip här kommer bara kunna nås från våran virtual environment och inte utanför den.\\
+Vi kan kolla att vi ligger inom vår virtual environment med which kommandot;\\\\
+Det är rätt om den visar en directory som slutar på "/env/bin/python"\\\\
+\textbf{which python}\\\\
+För att gå ut ur vår virtual environment så kan vi bara deaktivera den.\\\\
+\textbf{deactivate}\\\\
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{venv_check}
+  \caption{\label{fig:The-caption} Kontroll att vi ligger inom vår virtual environment}
+\end{figure}
 
 \section{Git}
 Versionshanterar-systemet Git är också ett krav.\\ 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  27 SEP 2023 14:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.9.8)  29 SEP 2023 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,6 +636,18 @@ Package caption Info: hyperref package is loaded.
 
 LaTeX Warning: Label `fig:The-caption' multiply defined.
 
+
+LaTeX Warning: Label `fig:The-caption' multiply defined.
+
+
+LaTeX Warning: Label `fig:The-caption' multiply defined.
+
+
+LaTeX Warning: Label `fig:The-caption' multiply defined.
+
+
+LaTeX Warning: Label `fig:The-caption' multiply defined.
+
 )
 \openout1 = `Installationsmanual.aux'.
 
@@ -826,89 +838,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--58
 
  []
 
-File: ./images//pip_version.png Graphic file (type bmp)
-<./images//pip_version.png>
-
-Overfull \hbox (4.5157pt too wide) in paragraph at lines 67--68
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
-
- []
-
-[1]
-File: ./images//emacs_version.png Graphic file (type bmp)
-<./images//emacs_version.png>
-
-Overfull \hbox (4.5157pt too wide) in paragraph at lines 81--82
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
-
- []
-
-File: ./images//extensions.png Graphic file (type bmp)
-<./images//extensions.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--103
-
- []
-
-[2]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -916,38 +845,146 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 F
-       ör att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
+l.59 V
+      irtual Environments används inom Python för att kunna ha flera olika v...
+
 ? 
+File: ./images//venv_check.png Graphic file (type bmp)
+<./images//venv_check.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
 
  []
 
-File: ./images//flask_run.png Graphic file (type bmp)
-<./images//flask_run.png>
 
-Overfull \hbox (69.2574pt too wide) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--79
+
+ []
+
+[1]
+File: ./images//pip_version.png Graphic file (type bmp)
+<./images//pip_version.png>
+
+Overfull \hbox (4.5157pt too wide) in paragraph at lines 88--89
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--120
+Underfull \hbox (badness 10000) in paragraph at lines 81--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--120
+Underfull \hbox (badness 10000) in paragraph at lines 81--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--92
+
+ []
+
+File: ./images//emacs_version.png Graphic file (type bmp)
+<./images//emacs_version.png>
+
+Overfull \hbox (4.5157pt too wide) in paragraph at lines 102--103
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--106
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+
+ []
+
+File: ./images//extensions.png Graphic file (type bmp)
+<./images//extensions.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--124
 
  []
 
@@ -955,8 +992,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--120
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 F
+       ör att kunna arbeta med Python inom webbsidan så måste vi ha Flask.\\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
+
+ []
+
+File: ./images//flask_run.png Graphic file (type bmp)
+<./images//flask_run.png>
+
+Overfull \hbox (69.2574pt too wide) in paragraph at lines 137--138
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--141
+
+ []
+
+[3] 
 AED: lastpage setting LastPage
-[3] [4] (./Installationsmanual.aux)
+[4] (./Installationsmanual.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.86pt have occurred.
@@ -968,13 +1047,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Installationsmanual.out' has not changed.
-(rerunfilecheck)             Checksum: FB8C41D4D2032EE572C50AC4957F1475;899.
+(rerunfilecheck)             Checksum: 95E5FEC3A984D298B69FB1C82CB66782;1055.
  ) 
 Here is how much of TeX's memory you used:
- 24429 strings out of 478190
- 504542 string characters out of 5854828
- 846113 words of memory out of 5000000
- 44655 multiletter control sequences out of 15000+600000
+ 24448 strings out of 478190
+ 504974 string characters out of 5854828
+ 848113 words of memory out of 5000000
+ 44674 multiletter control sequences out of 15000+600000
  471242 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,11n,118p,544b,642s stack positions out of 5000i,500n,10000p,200000b,80000s
