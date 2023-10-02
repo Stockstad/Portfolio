@@ -48,8 +48,9 @@
 
         {% for p in projects %}
             <section class="info">
+                <sh>
                 <div>
-                    <img src="{{ p['small_img'] }}" alt="Project Logo">
+                    <a href="{{ url_for('project', project_id=p['project_id']) }}"><img src="{{ p['small_img'] }}" alt="Project Logo"></a>
                 </div>
                 <div>
                     <ul>
@@ -59,6 +60,7 @@
                         <li><h4>Link: <a href="{{ p['repos_link'] }}">Repository</a></h4></li>
                     </ul>
                 </div>  
+            </sh>
             </section>
         {% endfor %}
 

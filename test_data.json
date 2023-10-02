@@ -66,5 +66,23 @@
         "start_date": "2023-10-20",
         "end_date": "2023-11-22",
         "project_description": "Laravel is the best guys!"
+    },
+    {
+        "name": "C++ Game",
+        "project_id": 788827,
+        "course": "TDP003",
+        "small_img": "../static/a71f7070-5041-4dbe-9e04-8b4b8c0c00f2.jpg",
+        "big_img": null,
+        "repos_link": "https://www.mozilla.org/en-GB/?v=2",
+        "techniques_used": [
+            "C++",
+            "Python",
+            "Git",
+            "C",
+            "Swift"
+        ],
+        "start_date": "2023-10-02",
+        "end_date": "2023-10-03",
+        "project_description": "Simply an insane Project"
     }
 ]

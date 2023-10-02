@@ -149,7 +149,6 @@ p {
 
 }
 
-
 img {
     width: 20em;
     height: 15em;
@@ -165,7 +164,7 @@ img {
 }
 
 .socials {
-    margin-top: 1em;
+    margin-top: 42em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
