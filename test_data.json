@@ -1,39 +1,51 @@
 [
     {
-        "name": "C#-Project",
+        "name": "Smalltalk-project",
         "project_id": 1,
-        "course": "TDP003",
-        "small_img": "../static/csharp.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON"],
-        "start_date": "2023-05-19",
-        "desc": "This project was created using the best programming language out there -- C#!"
+        "course": "TDE773",
+        "small_img": "../static/cpp.jpg",
+        "big_img": "../static/cpp.jpg",
+        "repos_link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D",
+        "techniques_used": [
+            "Smalltalk",
+            "CARBON",
+            "Lisp"
+        ],
+        "start_date": "2022-09-30",
+        "end_date": "2022-12-13",
+        "project_description": "Did you get it? Small...talk hahaha. It's the best. so funny"
     },
     {
-        "name": "TS-Project",
-        "project_id": 2,
-        "course": "TDP003",
-        "small_img": "../static/ts.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["Dart", "JavaScript", "CSS", "Flutter", "MongoDB"],
-        "start_date": "2023-05-19"
+        "name": "C#-Project",
+        "project_id": 15,
+        "course": "TDP005",
+        "small_img": null,
+        "big_img": null,
+        "repos_link": "https://liu.se",
+        "techniques_used": [
+            "C#",
+            ".NET",
+            "JSON",
+            "Blazor"
+        ],
+        "start_date": "2023-10-11",
+        "end_date": "2023-10-31",
+        "project_description": "Welcome to C#!"
     },
     {
-        "name": "Ruby-Project",
-        "project_id": 3,
-        "course": "TDP003",
-        "small_img": "../static/ruby.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["C#", "MySQL", "JSON","C++", "React", "Angular"],
-        "start_date": "2023-05-19"
-    },
-    {
-        "name": "Infinity:th JS framework",
-        "project_id": 4,
-        "course": "TDPUU",
-        "small_img": "../static/mongodb.png",
-        "repos_link": "https://gitlab.liu.se/johto839/tdp003/",
-        "techniques_used": ["JavaScript", "AJAX", "C", "WebAssemby"],
-        "start_date": "1996-07-12"
+        "name": "Swift-Project",
+        "project_id": 15,
+        "course": "Fruktkurs",
+        "small_img": "../static/9150097c-7792-409d-b3e1-d23a834e4c70.png",
+        "big_img": null,
+        "repos_link": "https://apple.com",
+        "techniques_used": [
+            "Swift",
+            "C",
+            "MongoDB"
+        ],
+        "start_date": "2023-10-07",
+        "end_date": "2023-10-17",
+        "project_description": "Apple became good when they swtiched from C to Swift"
     }
 ]

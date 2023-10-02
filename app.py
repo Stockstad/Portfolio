@@ -1,10 +1,28 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_session import Session
+from werkzeug.utils import secure_filename
 import data
 import userman
+import json
+import os
+import uuid
 
+UPLOAD_FOLDER = 'static'
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] =  UPLOAD_FOLDER
 app.secret_key = 'very_secret'
+
+
+
+def get_file(file):
+    # Generate a unique file name
+    unique_filename = str(uuid.uuid4()) + os.path.splitext(file.filename)[-1]
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], unique_filename)
+
+# Save the file to the server
+    file.save(file_path)
+
+    return f"../static/{unique_filename}" 
 
 
 
@@ -79,13 +97,13 @@ def login():
         # Process login form data here
         username = request.form['username']
         password = request.form['password']
+        print(username)
+        print(password)
         # Implement authentication logic (e.g., check against a database)
         if userman.login(username, password):
             # Authentication successful, redirect to a protected page
             session['user'] = username
-            print('Hi')
             return redirect(url_for('panel'))
-
         else:
             # Authentication failed, display an error messagecredentials
             error = 'Invalid credentials. Please try again.'
@@ -97,17 +115,28 @@ def login():
 @app.route('/admin/panel', methods=['GET', 'POST'])
 def panel():
     if request.method == 'POST':
-        session.pop('user')
-        return render_template('login.html')
+        name = request.form['project-name']
+        course = request.form['course-name']
+        start_date = request.form['start-date']
+        end_date = request.form['end-date']
+        techniques = request.form['tech-box'].split()
+        repos_link = request.form['repo-link']
+        desc = request.form['project-description']
+        big_img = request.files['large-img']
+        small_img = get_file(request.files['small-img'])
+
+
+        session['db'] = data.load("test_data.json")
+        
+        new_project = {"name": name, "project_id": 15, "course": course, "small_img": small_img, "big_img": None, "repos_link": repos_link, "techniques_used": techniques, "start_date": start_date, "end_date": end_date, "project_description": desc}
+
+        session['db'].append(new_project)
+
+        with open("test_data.json", "w") as file:
+            json.dump(session['db'], file, indent=4)
+        return render_template('panel.html')
     else:
-        if 'user' in session:
-            user = session['user']
-            return render_template('panel.html', user=user)
-        else:
-            return redirect(url_for('login'))
-                    
-
-
+        return render_template('panel.html')
 
 app.run(debug=True)
 
