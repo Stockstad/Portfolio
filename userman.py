@@ -30,5 +30,3 @@ def login(username, password):
     return False
 
 
-
-print(hash("bababooey123"))

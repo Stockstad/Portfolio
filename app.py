@@ -38,10 +38,17 @@ def list():
         sort_order = request.form.get('sortorder')
         sort_by = request.form.get('sortby')
         techs = request.form.getlist('technique')
+        search_by = request.form.getlist('searchby')
+
+        if len(search_by) < 1:
+            search_by = None
+
+        
 
         print(f"{search_key}, {sort_order}, {sort_by}, {techs}")
 
-        projects = data.search(db=pl, sort_by=sort_by, sort_order=sort_order, techniques=techs, search=search_key, search_fields=None)
+        projects = data.search(db=pl, sort_by=sort_by, sort_order=sort_order, techniques=techs, search=search_key, search_fields=search_by)
+       
         return render_template('list.html', projects=projects, techniques=techniques)
 
 
@@ -72,12 +79,13 @@ def login():
         # Process login form data here
         username = request.form['username']
         password = request.form['password']
-
         # Implement authentication logic (e.g., check against a database)
         if userman.login(username, password):
             # Authentication successful, redirect to a protected page
             session['user'] = username
+            print('Hi')
             return redirect(url_for('panel'))
+
         else:
             # Authentication failed, display an error messagecredentials
             error = 'Invalid credentials. Please try again.'

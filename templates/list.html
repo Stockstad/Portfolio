@@ -29,12 +29,15 @@
                     <option value="desc" selected name="desc">Descending</option>
                     <option value="asec" name="asc">Ascending</option>
             </select>
-            <select class="selection-item" name="searchby" multiple>
-                <option value="" disabled>Search by</option>
-                <option value="name" name="name">Name</option>
-                <option value="course" name="course">Course</option>
-            </select>
+            
 
+        </section>
+        <section class="selection-bar">
+            <h4>Search by: </h4>
+            <input type="checkbox" name="searchby" value="name">Name
+            <input type="checkbox" name="searchby" value="start_date">Start Date
+            <input type="checkbox" name="searchby" value="end_date">End Date
+            <input type="checkbox" name="searchby" value="course">Course
         </section>
         <section class="selection-bar">
             {% for t in techniques %}
@@ -52,7 +55,7 @@
                     <ul>
                         <a href="{{ url_for('project', project_id=p['project_id']) }}"><li><h4><u>{{ p['name'] }} </u></h4></li></a>
                         <li><h4>Course: {{ p['course'] }}</h4></li>
-                        <li><h4>Techniques: {{ p['techniques_used']}}</h4></li>
+                        <li><h4>Techniques: {{ p.techniques_used }}</h4></li>
                         <li><h4>Link: <a href="{{ p['repos_link'] }}">Repository</a></h4></li>
                     </ul>
                 </div>  
