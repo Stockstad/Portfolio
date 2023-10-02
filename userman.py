@@ -1,5 +1,6 @@
 import json
 import bcrypt
+import random
 
 def hash(password):
     password = password.encode('utf-8')
@@ -29,4 +30,13 @@ def login(username, password):
                 return True
     return False
 
+def generate_unique_id(db):
+    while True:
+        id = random.randrange(100000, 999999)
+        for i in db:
+            if i['project_id'] == id:
+                continue
+            else:
+                return id
+    
 

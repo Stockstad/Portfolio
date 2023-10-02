@@ -128,7 +128,7 @@ def panel():
 
         session['db'] = data.load("test_data.json")
         
-        new_project = {"name": name, "project_id": 15, "course": course, "small_img": small_img, "big_img": None, "repos_link": repos_link, "techniques_used": techniques, "start_date": start_date, "end_date": end_date, "project_description": desc}
+        new_project = {"name": name, "project_id": userman.generate_unique_id(session['db']), "course": course, "small_img": small_img, "big_img": None, "repos_link": repos_link, "techniques_used": techniques, "start_date": start_date, "end_date": end_date, "project_description": desc}
 
         session['db'].append(new_project)
 

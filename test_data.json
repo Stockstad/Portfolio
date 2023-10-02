@@ -17,7 +17,7 @@
     },
     {
         "name": "C#-Project",
-        "project_id": 15,
+        "project_id": 12,
         "course": "TDP005",
         "small_img": null,
         "big_img": null,
@@ -47,5 +47,24 @@
         "start_date": "2023-10-07",
         "end_date": "2023-10-17",
         "project_description": "Apple became good when they swtiched from C to Swift"
+    },
+    {
+        "name": "PHP-Project",
+        "project_id": 167485,
+        "course": "TDX434",
+        "small_img": "../static/41eec5e0-9748-4ff7-bf3e-13aba7659aee.jpg",
+        "big_img": null,
+        "repos_link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D",
+        "techniques_used": [
+            "Laravel",
+            "PHP",
+            "CSS",
+            "HTML",
+            "JavaScript",
+            "Vue.js"
+        ],
+        "start_date": "2023-10-20",
+        "end_date": "2023-11-22",
+        "project_description": "Laravel is the best guys!"
     }
 ]
