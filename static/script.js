@@ -14,13 +14,13 @@ tech_buttons.forEach(button => {
       button.style.opacity = "50%";
       selected_techs.push(value);
 
-      updateTechButtons();
+      //updateTechButtons();
       
     }
     else {
       button.style.opacity = "100%";
       selected_techs.pop(value);
-      updateTechButtons();
+      //updateTechButtons();
     }
 
   });

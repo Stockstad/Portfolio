@@ -134,9 +134,9 @@ def panel():
 
         with open("test_data.json", "w") as file:
             json.dump(session['db'], file, indent=4)
-        return render_template('panel.html')
+        return render_template('panel.html', user=session['user'])
     else:
-        return render_template('panel.html')
+        return render_template('panel.html', user=session['user'])
 
 app.run(debug=True)
 
